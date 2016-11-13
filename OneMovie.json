@@ -16,11 +16,6 @@
           "year": "1989"
         },
         {
-          "source": "http://192.168.1.4/Movies/LegalEagles.mp4",
-          "title": "Legal Eagles",
-          "year": "1986"
-        },
-        {
           "source": "http://192.168.1.4/Movies/DeadlyPursuit.mp4",
           "title": "Shoot to Kill",
           "year": "1988"
@@ -29,11 +24,6 @@
           "source": "http://192.168.1.4/Movies/Sneakers.mp4",
           "title": "Sneakers",
           "year": "1992"
-        },
-        {
-          "source": "http://192.168.1.4/Movies/OtherPeoplesMoney.mp4",
-          "title": "Other People's Money",
-          "year": "1991"
         }
     ],
     "tvshows": []
