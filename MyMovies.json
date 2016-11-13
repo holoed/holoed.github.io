@@ -4,11 +4,6 @@
            "source": "http://192.168.1.4/Movies/Star%20Wars%20The%20Force%20Awakens.mp4",
            "title": "Star Wars: The Force Awakens",
            "year": "2015"
-        },
-        {
-          "source": "http://192.168.1.4/Movies/SuperSnooper.mp4",
-          "title": "Super Fuzz",
-          "year": "1980"
         }
     ],
     "tvshows": []
