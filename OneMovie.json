@@ -1,19 +1,44 @@
 {
     "movies": [
-         {
-          "source": "http://192.168.60.1:9000/disk/NON-DLNA-OP01-FLAGS01700000/O0$3$27I663818.mp4",
-          "title": "Mercury Rising",
-          "year": "1998"
-        },
         {
           "source": "http://192.168.1.4/Movies/Star%20Wars%20The%20Force%20Awakens.mp4",
-          "title": "Star Wars: The Force Awakens",
-          "year": "2015"
+           "title": "Star Wars: The Force Awakens",
+           "year": "2015"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/SuperSnooper.mp4",
+          "title": "Super Fuzz",
+          "year": "1980"
         },
         {
           "source": "http://192.168.1.4/Movies/DeadPoetsSociety.mp4",
           "title": "Dead Poets Society",
           "year": "1989"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/HowToSucceedInBusinessWithoutReallyTrying.mp4",
+          "title": "How to Succeed in Business Without Really Trying",
+          "year": "1967"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/LegalEagles.mp4",
+          "title": "Legal Eagles",
+          "year": "1986"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/DeadlyPursuit.mp4",
+          "title": "Shoot to Kill",
+          "year": "1988"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Sneakers.mp4",
+          "title": "Sneakers",
+          "year": "1992"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/OtherPeoplesMoney.mp4",
+          "title": "Other People's Money",
+          "year": "1991"
         }
     ],
     "tvshows": []
