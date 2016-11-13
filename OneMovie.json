@@ -2,13 +2,13 @@
     "movies": [
         {
           "source": "http://192.168.1.4/Movies/Star%20Wars%20The%20Force%20Awakens.mp4",
-          "title": "Star Wars: The Force Awakens",
-          "year": "2015"
+          "title": "Mercury Rising",
+          "year": "1998"
         },
         {
           "source": "http://192.168.1.4/Movies/Star%20Wars%20The%20Force%20Awakens.mp4",
-          "title": "Mercury Rising",
-          "year": "1998"
+          "title": "Star Wars: The Force Awakens",
+          "year": "2015"
         }
     ],
     "tvshows": []
