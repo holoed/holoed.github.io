@@ -969,48 +969,6 @@
             "source": "http://192.168.1.4/Movies/Vertigo.mp4",
             "title": "Vertigo",
             "year": "1958"
-        },
-        {
-            "source": "http://192.168.1.4/Movies/War%20Games.mp4",
-            "title": "Wargames",
-            "year": ""
-        },
-        {
-            "source": "http://192.168.1.4/Movies/Watch%20Out%20We're%20Mad.mp4",
-            "title": "Watch Out We're Mad",
-            "year": ""
-        },
-        {
-            "source": "http://192.168.1.4/Movies/West%20Side%20Story.mp4",
-            "title": "West Side Story",
-            "year": ""
-        },
-        {
-            "source": "http://192.168.1.4/Movies/What%20About%20Bob.mp4",
-            "title": "What About Bob?",
-            "year": ""
-        },
-        {
-            "source": "http://192.168.1.4/Movies/What%20Lies%20Beneath.mp4",
-            "title": "What Lies Beneath",
-            "year": ""
-        },
-        {
-            "source": "http://192.168.1.4/Movies/When%20Harry%20Met%20Sally.mp4",
-            "title": "When Harry Met Sally",
-            "year": ""
-        },
-        {
-            "source": "http://192.168.1.4/Movies/I%20Sette%20Re%20di%20Roma.mp4",
-            "title": "I Sette Re di Roma",
-            "year": "1989",
-            "poster": "http://192.168.1.4/Movies/i7re.jpg"
-        },
-        {
-            "source": "http://192.168.1.4/Movies/Rugantino.mp4",
-            "title": "Rugantino",
-            "year": "1978",
-            "poster": "http://192.168.1.4/Movies/rugantino.jpg"
         }
     ],
     "tvshows": []
