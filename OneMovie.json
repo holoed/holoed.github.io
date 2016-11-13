@@ -666,21 +666,6 @@
             "year": ""
         },
         {
-            "source": "http://192.168.1.4/Movies/Roque%20Trader.mp4",
-            "title": "Rogue Trader",
-            "year": "1999"
-        },
-        {
-            "source": "http://192.168.1.4/Movies/Seven.mp4",
-            "title": "Se7en",
-            "year": "1995"
-        },
-        {
-            "source": "http://192.168.1.4/Movies/Smoke.mp4",
-            "title": "Smoke",
-            "year": "1995"
-        },
-        {
             "source": "http://192.168.1.4/Movies/Snake%20Eyes.mp4",
             "title": "Snake Eyes",
             "year": "1998"
