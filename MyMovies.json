@@ -1,0 +1,2378 @@
+{
+    "movies": [
+        {
+          "source": "http://192.168.1.4/Movies/Star%20Wars%20The%20Force%20Awakens.mp4",
+           "title": "Star Wars: The Force Awakens",
+           "year": "2015"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/SuperSnooper.mp4",
+          "title": "Super Fuzz",
+          "year": "1980"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/DeadPoetsSociety.mp4",
+          "title": "Dead Poets Society",
+          "year": "1989"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/HowToSucceedInBusinessWithoutReallyTrying.mp4",
+          "title": "How to Succeed in Business Without Really Trying",
+          "year": "1967"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/LegalEagles.mp4",
+          "title": "Legal Eagles",
+          "year": "1986"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/DeadlyPursuit.mp4",
+          "title": "Shoot to Kill",
+          "year": "1988"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Sneakers.mp4",
+          "title": "Sneakers",
+          "year": "1992"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/OtherPeoplesMoney.mp4",
+          "title": "Other People's Money",
+          "year": "1991"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/TheBrinksJob.mp4",
+          "title": "The Brink's Job",
+          "year": "1978"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/TheMartian.mp4",
+          "title": "The Martian",
+          "year": "2015"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Mission%20Impossible%20-%20Rogue%20Nation.mp4",
+          "title": "Mission: Impossible – Rogue Nation",
+          "year": "2015"
+        },
+        {
+	  "source": "http://192.168.1.4/Movies/AVENGERS_AGE_OF_ULTRON.mp4",
+          "title": "Avengers: Age of Ultron",
+          "year": "2015"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/The%20Survivors.mp4",
+          "title": "The Survivors",
+          "year": "1983"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/See%20no%20Evil%20Hear%20no%20Evil.mp4",
+          "title": "See No Evil, Hear No Evil",
+          "year": "1989"
+        },
+    	{
+          "source": "http://192.168.1.4/Movies/THE_LONELY_GUY.mp4",
+          "title": "The Lonely Guy",
+          "year": "1984"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/THE_PRINCESS_BRIDE.mp4",
+          "title": "The Princess Bride",
+          "year": "1987"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/48%20Hours.mp4",
+          "title": "48 Hrs.",
+          "year": "1982"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Star%20Trek%20IV%20The%20Voyage%20Home.mp4",
+          "title": "Star Trek IV: The Voyage Home",
+          "year": "1986"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Her%20Alibi.mp4",
+          "title": "Her Alibi",
+          "year": "1989"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/The%20Negotiator.mp4",
+          "title": "The Negotiator",
+          "year": "1998"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/The%20Fifth%20Element.mp4",
+          "title": "The Fifth Element",
+          "year": "1997"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/DIRTY_ROTTEN_SCOUNDRELS.mp4",
+          "title": "Dirty Rotten Scoundrels",
+          "year": "1988"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/buddybuddy.mp4",
+          "title": "Buddy Buddy",
+          "year": "1981"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Panic%20Room.mp4",
+          "title": "Panic Room",
+          "year": "2002"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Porgi%20L%20Altra%20Guancia.mp4",
+          "title": "Two Missionaries",
+          "year": "1974"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Pari%20e%20Dispari.mp4",
+          "title": "Odds and Evens",
+          "year": "1978"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Il%20Conte%20Tacchia.mp4",
+          "title": "Count Tacchia",
+          "year": "1982"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Anche%20Gli%20Angeli%20Tirano%20di%20Destro.mp4",
+          "title": "Charleston",
+          "year": "1974"
+        },
+        {
+          "source": "http://secure.netflix.com/us/deviceui/index.html?movieid=http%3A%2F%2Fapi.netflix.com%2Fcatalog%2Ftitles%2Fmovies%2F70243360&source=nflx_email&action=play&lnktrk=EMP&g=BBC95999D2CC75240D9BC47C6174BF3F0AC86882&lkid=Play",
+          "title": "Iron Man 3",
+          "year": "2013"
+        },
+        {
+          "source": "http://secure.netflix.com/us/deviceui/index.html?movieid=http%3A%2F%2Fapi.netflix.com%2Fcatalog%2Ftitles%2Fmovies%2F70262640&source=nflx_email&action=play&lnktrk=EMP&g=BBC95999D2CC75240D9BC47C6174BF3F0AC86882&lkid=Play",
+          "title": "Star Trek Into Darkness",
+          "year": "2013"
+        },
+        {
+          "source": "http://secure.netflix.com/us/deviceui/index.html?movieid=http%3A%2F%2Fapi.netflix.com%2Fcatalog%2Ftitles%2Fmovies%2F70065124&source=nflx_email&action=play&lnktrk=EMP&g=BBC95999D2CC75240D9BC47C6174BF3F0AC86882&lkid=Play",
+          "title": "National Treasure: Book of Secrets",
+          "year": "2007"
+        },
+        {
+          "source": "http://www.amazon.co.uk/gp/product/B00HFZW6XC/ref=avod_yvl_watch_now",
+          "title": "Moon",
+          "year": "2009"
+        },
+        {
+          "source": "http://www.amazon.co.uk/gp/product/B00G3ED716/ref=avod_yvl_watch_now#",
+          "title": "Inception",
+          "year": "2010"
+        },
+        {
+          "source": "https://www.youtube.com/watch?v=Iw_TK5N4bu8",
+          "title": "Sherlock Holmes",
+          "year": "2009"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/Marchese%20Del%20Grillo.mp4",
+          "title": "The Marquis of Grillo",
+          "year": "1981"
+        },
+        {
+          "source": "http://192.168.1.4/Movies/I%20Due%20Superpiedi%20Quasi%20Piatti.mp4",
+          "title": "Crime Busters",
+          "year": "1977"
+        },
+        {
+           "source": "http://192.168.1.4/Movies/Hair.mp4",
+           "title": "Hair",
+           "year": "1979"
+        },
+        {
+           "source": "http://192.168.1.4/Movies/Hello%20Dolly.mp4",
+           "title": "Hello Dolly",
+           "year": "1969"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Febbre%20da%20Cavallo.mp4",
+            "title": "Febbre da Cavallo",
+            "year": "1976"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Star%20Wars%20Episode%20VI.mp4",
+            "title": "Star Wars: Episode VI - Return of the Jedi",
+	    "year": "1983"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Oscar.mp4",
+            "title": "Oscar",
+            "year": "1991"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/16%20Blocks.mp4",
+            "title": "16 Blocks",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/A%20few%20good%20men.mp4",
+            "title": "A Few Good Men",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Alfie.mp4",
+            "title": "Alfie",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/all%20the%20president's%20men.mp4",
+            "title": "All The President's Men",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/An%20Inconvenient%20Truth.mp4",
+            "title": "An Inconvenient Truth",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Analyze%20This.mp4",
+            "title": "Analyze This",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Apollo%2013.mp4",
+            "title": "Apollo 13",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Arlington%20Road.mp4",
+            "title": "Arlington Road",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Attack%20Of%20The%20Clones.mp4",
+            "title": "Star Wars: Episode II - Attack of the Clones",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Back%20To%20The%20Future%20Part%20II.mp4",
+            "title": "Back to the Future Part II",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Back%20to%20the%20Future%20Part%20III.mp4",
+            "title": "Back to the Future Part III",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Back%20To%20The%20Future.mp4",
+            "title": "Back to the Future",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Barefoot%20in%20the%20Park.mp4",
+            "title": "Barefoot in the Park",
+            "year": "1967"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Battle%20For%20Planet%20Of%20The%20Apes.mp4",
+            "title": "Battle for the Planet of the Apes",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Behind%20Enemy%20Lines.mp4",
+            "title": "Behind Enemy Lines",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Behind%20The%20Planet%20Of%20The%20Apes.mp4",
+            "title": "Behind the Planet of the Apes",
+            "year": "1998"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Beneath%20The%20Planet%20Of%20The%20Apes.mp4",
+            "title": "Beneath the Planet of the Apes",
+            "year": "1970"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Big%20Stan.mp4",
+            "title": "Big Stan",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Big%20Trouble%20In%20Little%20China.mp4",
+            "title": "Big Trouble in Little China",
+            "year": "1986"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Black%20Sheep.mp4",
+            "title": "Black Sheep",
+            "year": "1996"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Blue%20in%20the%20Face.mp4",
+            "title": "Blue In The Face",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Bonfire%20Of%20The%20Vanities.mp4",
+            "title": "The Bonfire Of The Vanities",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Cadillac%20Man.mp4",
+            "title": "Cadillac Man",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Chain%20Reaction.mp4",
+            "title": "Chain Reaction",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Chicago.mp4",
+            "title": "Chicago",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Chinatown.mp4",
+            "title": "Chinatown",
+            "year": "1974"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Class%20Action.mp4",
+            "title": "Class Action",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Clear%20and%20Present%20Danger.mp4",
+            "title": "Clear and Present Danger",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Confidence.mp4",
+            "title": "Confidence",
+            "year": "2003"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Conquest%20Of%20Planet%20Of%20The%20Apes.mp4",
+            "title": "Conquest of the Planet of the Apes",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Continuavano%20a%20chiamarlo%20Trinita.mp4",
+            "title": "Trinity Is STILL My Name!",
+            "year": "1971"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Crimson%20Tide.mp4",
+            "title": "Crimson Tide",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Dead%20Men%20Don't%20Wear%20Plaid.mp4",
+            "title": "Dead Men Don't Wear Plaid",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Donnie%20Brasco.mp4",
+            "title": "Donnie Brasco",
+            "year": "1997"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Down%20Periscope.mp4",
+            "title": "Down Periscope",
+            "year": "1996"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Dumb%20And%20Dumber.mp4",
+            "title": "Dumb & Dumber",
+            "year": "1994"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Enemy%20at%20the%20Gates.mp4",
+            "title": "Enemy at the Gates",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Enemy%20of%20the%20State.mp4",
+            "title": "Enemy of the State",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Fail%20Safe.mp4",
+            "title": "Fail Safe",
+            "year": "2000"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Fallen.mp4",
+            "title": "Fallen",
+            "year": "1998"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/FlightPlan.mp4",
+            "title": "Flightplan",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Forrest%20Gump.mp4",
+            "title": "Forrest Gump",
+            "year": "1994"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Fun%20with%20Dick%20and%20Jane.mp4",
+            "title": "Fun With Dick And Jane",
+            "year": "2005"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Gattaca.mp4",
+            "title": "Gattaca",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Ghostbusters.mp4",
+            "title": "Ghostbusters",
+            "year": "1984"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Grosse%20Pointe%20Blank.mp4",
+            "title": "Grosse Pointe Blank",
+            "year": "1997"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/GungHo.mp4",
+            "title": "Gung Ho",
+            "year": "1986"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Harts%20War.mp4",
+            "title": "Hart's War",
+            "year": "2002"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/High%20Society.mp4",
+            "title": "High Society",
+            "year": "1956"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Indiana%20Jones%20and%20The%20Last%20Crusade.mp4",
+            "title": "Indiana Jones and the Last Crusade",
+            "year": "1989"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Indiana%20Jones%20and%20The%20Temple%20of%20Doom.mp4",
+            "title": "Indiana Jones and the Temple of Doom",
+            "year": "1984"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Innerspace.mp4",
+            "title": "Innerspace",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Irma%20La%20Douce.mp4",
+            "title": "Irma La Douce",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Iron%20Man.mp4",
+            "title": "Iron Man",
+            "year": "2008"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Jewel%20Of%20The%20Nile.mp4",
+            "title": "The Jewel Of The Nile",
+            "year": "1985"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Jfk.mp4",
+            "title": "JFK",
+            "year": "1991"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Ladyhawke.mp4",
+            "title": "Ladyhawke",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Leatherheads.mp4",
+            "title": "Leatherheads",
+            "year": "2008"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Leon.mp4",
+            "title": "Léon: The Professional",
+            "year": "1994"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Lethal%20Weapon.mp4",
+            "title": "Lethal Weapon",
+            "year": "1987"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/LetItRide.mp4",
+            "title": "Let It Ride",
+            "year": "1989"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Lo%20chiamavano%20Trinita.mp4",
+            "title": "They Call me Trinity",
+            "year": "1970"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Lock%20Stock%20and%20Two%20Smoking%20Barrels.mp4",
+            "title": "Lock, Stock And Two Smoking Barrels",
+            "year": "1998"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Master%20And%20Commander.mp4",
+            "title": "Master and Commander: The Far Side of the World",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Mean%20Season.mp4",
+            "title": "The Mean Season",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Memento.mp4",
+            "title": "Memento",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Micheal%20Clayton.mp4",
+            "title": "Michael Clayton",
+            "year": "2007"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Midnight%20Run.mp4",
+            "title": "Midnight Run",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Minority%20Report.mp4",
+            "title": "Minority Report",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Mission%20Impossible%20III.mp4",
+            "title": "Mission: Impossible III",
+            "year": "2006"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Mission%20Impossible.mp4",
+            "title": "Mission: Impossible",
+            "year": "1996"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Nati%20Con%20La%20Camicia.mp4",
+            "title": "Go for It",
+            "year": "1983"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/National%20Lampoon's%20Vacation.mp4",
+            "title": "National Lampoon's Vacation",
+            "year": "1983"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Nineteen%20Eighty%20Four.mp4",
+            "title": "Nineteen Eighty-Four",
+            "year": "1984"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/No%20Country%20For%20Old%20Men.mp4",
+            "title": "No Country For Old Men",
+            "year": "2007"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/North%20By%20Northwest.mp4",
+            "title": "North By Northwest",
+            "year": "1959"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Oceans%20Eleven%202001.mp4",
+            "title": "Ocean's Eleven",
+            "year": "2001"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Office%20Space.mp4",
+            "title": "Office Space",
+            "year": "1999"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Oliver.mp4",
+            "title": "Oliver!",
+            "year": "1968"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/One%20Hour%20Photo.mp4",
+            "title": "One Hour Photo",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Out%20Of%20Time.mp4",
+            "title": "Out of Time",
+            "year": "2003"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Patriot%20Games.mp4",
+            "title": "Patriot Games",
+            "year": "1992"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Payback.mp4",
+            "title": "Payback",
+            "year": "1999"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Pirates%20Of%20Silicon%20Valley.mp4",
+            "title": "Pirates of Silicon Valley",
+            "year": "1999"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Piratesofthecaribbean.mp4",
+            "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+            "year": "2003"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Planet%20Of%20The%20Apes.mp4",
+            "title": "Planet Of The Apes",
+            "year": "1968"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Primer.mp4",
+            "title": "Primer",
+            "year": "2004"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Raiders%20of%20the%20Lost%20Ark.mp4",
+            "title": "Raiders Of The Lost Ark",
+            "year": "1981"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Rear%20Window.mp4",
+            "title": "Rear Window",
+            "year": "1954"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Robin%20Hood%20Men%20In%20Tights.mp4",
+            "title": "Robin Hood - Men In Tights",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Romancing%20The%20Stone.mp4",
+            "title": "Romancing The Stone",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Rope.mp4",
+            "title": "Rope",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Roque%20Trader.mp4",
+            "title": "Rogue Trader",
+            "year": "1999"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Seven.mp4",
+            "title": "Se7en",
+            "year": "1995"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Smoke.mp4",
+            "title": "Smoke",
+            "year": "1995"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Snake%20Eyes.mp4",
+            "title": "Snake Eyes",
+            "year": "1998"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Snatch.mp4",
+            "title": "Snatch.",
+            "year": "2000"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/So%20I%20Married%20An%20Axe%20Murderer.mp4",
+            "title": "So I Married An Axe Murderer",
+            "year": "1993"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Spies%20Like%20Us.mp4",
+            "title": "Spies Like Us",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Spy%20Game.mp4",
+            "title": "Spy Game",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Stakeout.mp4",
+            "title": "Stakeout",
+            "year": "1987"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Star%20Wars%20Episode%20IV.mp4",
+            "title": "Star Wars",
+            "year": "1977"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Star%20Wars%20Episode%20V.mp4",
+            "title": "Star Wars",
+            "year": "1980"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Stir%20Crazy.mp4",
+            "title": "Stir Crazy",
+            "year": "1980"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Sure%20Thing.mp4",
+            "title": "The Sure Thing",
+            "year": "1985"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20'Burbs.mp4",
+            "title": "The 'Burbs",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Abyss.mp4",
+            "title": "The Abyss",
+            "year": "1989"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Big%20Lebowski.mp4",
+            "title": "The Big Lebowski",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Bourne%20Identity.mp4",
+            "title": "The Bourne Identity",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Bourne%20Supremacy.mp4",
+            "title": "The Bourne Supremacy",
+            "year": "2004"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Butterfly%20Effect.mp4",
+            "title": "The Butterfly Effect",
+            "year": "2004"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20China%20Syndrome.mp4",
+            "title": "The China Syndrome",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Da%20Vinci%20Code.mp4",
+            "title": "The Da Vinci Code",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Firm.mp4",
+            "title": "The Firm",
+            "year": "1993"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Front%20Page.mp4",
+            "title": "The Front Page",
+            "year": "1974"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Fugitive.mp4",
+            "title": "The Fugitive",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Game.mp4",
+            "title": "The Game",
+            "year": "1997"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Godfather%20Part%20III.mp4",
+            "title": "The Godfather: Part III",
+            "year": "1990"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Godfather%20Part%20II.mp4",
+            "title": "The Godfather: Part II",
+            "year": "1974"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Godfather.mp4",
+            "title": "The Godfather",
+            "year": "1972"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Goonies.mp4",
+            "title": "The Goonies",
+            "year": "1985"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Great%20Escape.mp4",
+            "title": "The Great Escape",
+            "year": "1963"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Hunt%20for%20Red%20October.mp4",
+            "title": "The Hunt for Red October",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Illusionist.mp4",
+            "title": "The Illusionist",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Italian%20Job.mp4",
+            "title": "The Italian Job",
+            "year": "2003"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Majestic.mp4",
+            "title": "The Majestic",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Man%20Who%20Knew%20Too%20Much.mp4",
+            "title": "The Man Who Knew Too Much",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Matrix.mp4",
+            "title": "The Matrix",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Money%20Pit.mp4",
+            "title": "The Money Pit",
+            "year": "1986"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Odd%20Couple.mp4",
+            "title": "The Odd Couple",
+            "year": "1968"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Peacemaker.mp4",
+            "title": "The Peacemaker",
+            "year": "1997"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Prestige.mp4",
+            "title": "The Prestige",
+            "year": "2006"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Pursuit%20Of%20Happyness.mp4",
+            "title": "The Pursuit of Happyness",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Right%20Stuff.mp4",
+            "title": "The Right Stuff",
+            "year": "1983"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Siege.mp4",
+            "title": "The Siege",
+            "year": "1998"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Sting.mp4",
+            "title": "The Sting",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Terminal.mp4",
+            "title": "The Terminal",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Thomas%20Crown%20Affair.mp4",
+            "title": "The Thomas Crown Affair",
+            "year": "1999"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Time%20Machine.mp4",
+            "title": "The Time Machine",
+            "year": "2002"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/The%20Usual%20Suspects.mp4",
+            "title": "The Usual Suspects",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Three%20Days%20of%20The%20Condor.mp4",
+            "title": "Three Days of the Condor",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Tin%20Men.mp4",
+            "title": "Tin Men",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/To%20Catch%20A%20Thief.mp4",
+            "title": "To Catch A Thief",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Torn%20Curtain.mp4",
+            "title": "Torn Curtain",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Tron.mp4",
+            "title": "TRON",
+            "year": "1982"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/True%20Lies.mp4",
+            "title": "True Lies",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Twelve%20Angry%20Men.mp4",
+            "title": "12 Angry Men",
+            "year": "1957"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Twelve%20Monkeys.mp4",
+            "title": "Twelve Monkeys",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Twister.mp4",
+            "title": "Twister",
+            "year": "1996"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Two%20Jakes.mp4",
+            "title": "The Two Jakes",
+            "year": "1990"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/U571.mp4",
+            "title": "U-571",
+            "year": "2000"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Vanilla%20Sky.mp4",
+            "title": "Vanilla Sky",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Vertigo.mp4",
+            "title": "Vertigo",
+            "year": "1958"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/War%20Games.mp4",
+            "title": "Wargames",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Watch%20Out%20We're%20Mad.mp4",
+            "title": "Watch Out We're Mad",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/West%20Side%20Story.mp4",
+            "title": "West Side Story",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/What%20About%20Bob.mp4",
+            "title": "What About Bob?",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/What%20Lies%20Beneath.mp4",
+            "title": "What Lies Beneath",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/When%20Harry%20Met%20Sally.mp4",
+            "title": "When Harry Met Sally",
+            "year": ""
+        },
+        {
+            "source": "http://192.168.1.4/Movies/I%20Sette%20Re%20di%20Roma.mp4",
+            "title": "I Sette Re di Roma",
+            "year": "1989",
+            "poster": "http://192.168.1.4/Movies/i7re.jpg"
+        },
+        {
+            "source": "http://192.168.1.4/Movies/Rugantino.mp4",
+            "title": "Rugantino",
+            "year": "1978",
+            "poster": "http://192.168.1.4/Movies/rugantino.jpg"
+        }
+    ],
+    "tvshows": [
+        {
+            "seasons": [
+                {
+                    "episodes": [
+                        {
+                            "episode": "1",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc1-1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "2",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc1-2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "3",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc1-3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "4",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc1-4.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "5",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc2-1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "6",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc2-2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "7",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc2-3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "8",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc2-4.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "9",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc3-1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "10",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc3-2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "11",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc3-3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "12",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc3-4.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "13",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc4-1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "14",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc4-2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "15",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc4-3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "16",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc4-4.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "17",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc5-1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "18",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc5-2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "19",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc5-3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "20",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc5-4.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "21",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc6-1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "22",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc6-2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "23",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc6-3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "24",
+                            "season": "1",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%201/24%20Disc6-4.mp4",
+                            "title": "24"
+                        }
+                    ],
+                    "season": "24 Season 1"
+                },
+                {
+                    "episodes": [
+                        {
+                            "episode": "1",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_1_Episode_1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "2",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_1_Episode_2.mp4",
+                            "title": "24"
+                        },
+                        {  
+                            "episode": "3",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_1_Episode_3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "4",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_1_Episode_4.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "5",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_2_Episode_1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "6",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_2_Episode_2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "7",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_2_Episode_3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "8",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_2_Episode_4.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "9",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_3_Episode_1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "10",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_3_Episode_2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "11",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_3_Episode_3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "12",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_3_Episode_4.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "13",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_4_Episode_1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "14",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_4_Episode_2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "15",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_4_Episode_3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "16",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_4_Episode_4.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "17",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_5_Episode_1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "18",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_5_Episode_2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "19",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_5_Episode_3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "20",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_5_Episode_4.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "21",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_6_Episode_1.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "22",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_6_Episode_2.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "23",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_6_Episode_3.mp4",
+                            "title": "24"
+                        },
+                        {
+                            "episode": "24",
+                            "season": "2",
+                            "series": "24",
+                            "source": "http://192.168.1.4/TVShows/24_2001/24%20Season%202/24_Season_2_Disk_6_Episode_4.mp4",
+                            "title": "24"
+                        }
+                    ],
+                    "season": "24 Season 2"
+                }
+            ],
+            "title": "24",
+            "year": "2001"
+        },
+        {
+            "seasons": [
+                {
+                    "episodes": [
+                        {
+                            "episode": "9",
+                            "season": "1",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%201/Columbo%20%20Blueprint%20for%20Murder.mp4",
+                            "title": "Columbo: Blueprint for Murder"
+                        },
+                        {
+                            "episode": "5",
+                            "season": "1",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%201/Columbo%20-%20Dead%20Weight.mp4",
+                            "title": "Columbo - Dead Weight"
+                        },
+                        {
+                            "episode": "4",
+                            "season": "1",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%201/Columbo%20-%20Death%20lends%20a%20hand.mp4",
+                            "title": "Columbo: - Death Lends a Hand"
+                        },
+                        {
+                            "episode": "7",
+                            "season": "1",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%201/Columbo%20-%20Lady%20In%20Waiting.mp4",
+                            "title": "Columbo -  Lady In Waiting"
+                        },
+                        {
+                            "episode": "3",
+                            "season": "1",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%201/Columbo%20-%20Murder%20By%20The%20Book.mp4",
+                            "title": "Columbo - Murder By The Book"
+                        },
+                        {
+                            "episode": "8",
+                            "season": "1",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%201/Columbo%20-%20Short%20Fuse.mp4",
+                            "title": "Columbo: Short Fuse"
+                        },
+                        {
+                            "episode": "6",
+                            "season": "1",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%201/Columbo%20-%20Suitable%20For%20Framing.mp4",
+                            "title": "Columbo - Suitable For Framing"
+                        }
+                    ],
+                    "season": "Columbo Season 1"
+                },
+                {
+                    "episodes": [
+                        {
+                            "episode": "6",
+                            "season": "2",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%202/Columbo%20Season%202%20A%20Stitch%20in%20Crime.mp4",
+                            "title": "Columbo - Season 2 - A Stitch in a Crime"
+                        },
+                        {
+                            "episode": "4",
+                            "season": "2",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%202/Columbo%20Season%202%20Dagger%20of%20the%20Mind.mp4",
+                            "title": "Columbo - Season 2 - Dagger of the Mind"
+                        },
+                        {
+                            "episode": "1",
+                            "season": "2",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%202/Columbo%20Season%202%20Etude%20in%20Black.mp4",
+                            "title": "Columbo - Season 2 - Etude in Black"
+                        },
+                        {
+                            "episode": "5",
+                            "season": "2",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%202/Columbo%20Season%202%20Requiem%20for%20a%20falling%20star.mp4",
+                            "title": "Columbo - Season 2 - Requiem for a falling star"
+                        },
+                        {
+                            "episode": "3",
+                            "season": "2",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%202/Columbo%20Season%202%20The%20Most%20Crucial%20Game.mp4",
+                            "title": "Columbo - Season 2 - The most cruicial game"
+                        },
+                        {
+                            "episode": "2",
+                            "season": "2",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%202/Columbo-%20Season%202%20The%20Greenhouse%20Jungle.mp4",
+                            "title": "Columbo - Season 2 - The Greenhouse Jungle"
+                        }
+                    ],
+                    "season": "Columbo Season 2"
+                },
+                {
+                    "episodes": [
+                        {
+                            "episode": "2",
+                            "season": "3",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%203/Columbo%20Season%2003%20Any%20old%20Port%20in%20a%20Storm.mp4",
+                            "title": "Columbo: Series 3 Any old Port in a Storm"
+                        },
+                        {
+                            "episode": "3",
+                            "season": "3",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%203/Columbo%20Season%2003%20Candidate%20for%20Crime.mp4",
+                            "title": "Columbo: Series 3 Candidate for Crime"
+                        },
+                        {
+                            "episode": "4",
+                            "season": "3",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%203/Columbo%20Season%2003%20Double%20Exposure.mp4",
+                            "title": "Columbo: Series 3 Double Exposure"
+                        },
+                        {
+                            "episode": "1",
+                            "season": "3",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%203/Columbo%20Season%2003%20Lovely%20but%20Lethal.mp4",
+                            "title": "Columbo: Series 3 Lovely but Lethal"
+                        },
+                        {
+                            "episode": "6",
+                            "season": "3",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%203/Columbo%20Season%2003%20Mind%20over%20Mayhem.mp4",
+                            "title": "Columbo: Series 3 Mind over Mayhem"
+                        },
+                        {
+                            "episode": "5",
+                            "season": "3",
+                            "series": "Columbo",
+                            "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%203/Columbo%20Season%2003%20Publish%20or%20Perish.mp4",
+                            "title": "Columbo: Series 3 Publish or Perish"
+                        }
+                    ],
+                    "season": "Columbo Season 3"
+                },
+                {
+                    "episodes": [
+                        {
+                           "episode": "1",
+                           "season": "4",
+                           "series": "Columbo",
+                           "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%204/Columbo%20Season4%20-%20An%20Exercise%20in%20Fatality.mp4",
+                           "title": "An Exercise In Fatality"
+                        },
+                        {
+                           "episode": "2",
+                           "season": "4",
+                           "series": "Columbo",
+                           "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%204/Columbo%20Season4%20-%20Negative%20Reaction.mp4",
+                           "title": "Negative Reaction"
+                        },
+                        {
+                           "episode": "3",
+                           "season": "4",
+                           "series": "Columbo",
+                           "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%204/Columbo%20Season4%20-%20By%20Dawn%20Early%20Light.mp4",
+                           "title": "By Dawn´s Early Light"
+                        },
+                        {
+                           "episode": "4",
+                           "season": "4",
+                           "series": "Columbo",
+                           "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%204/Columbo%20Season4%20-%20Troubled%20Waters.mp4",
+                           "title": "Troubled Waters"
+                        },
+                        {
+                           "episode": "5",
+                           "season": "4",
+                           "series": "Columbo",
+                           "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%204/Columbo%20Season4%20-%20Playback.mp4",
+                           "title": "Playback"
+                        },
+                        {
+                           "episode": "6",
+                           "season": "4",
+                           "series": "Columbo",
+                           "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%204/Columbo%20Season4%20-%20A%20Deadly%20State%20of%20Mind.mp4",
+                           "title": "A Deadly State Of Mind"
+                        }
+                    ],
+                    "season": "Columbo Season 4"
+                },
+                {
+                    "episodes": [
+                        {
+                          "episode": "1",
+                          "season": "5",
+                          "series": "Columbo",
+                          "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%205/Columbo%20Season5%20Forgotten%20Lady.mp4",
+                          "title": "Forgotten Lady"
+                        },
+                        {
+                          "episode": "2",
+                          "season": "5",
+                          "series": "Columbo",
+                          "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%205/Columbo%20Season5%20A%20Case%20of%20Immunity.mp4",
+                          "title": "A Case of Immunity"
+                        },
+                        {
+                          "episode": "3",
+                          "season": "5",
+                          "series": "Columbo",
+                          "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%205/Columbo%20Season5%20Identity%20Crisis.mp4",
+                          "title": "Identity Crisis"
+                        },
+                        {
+                          "episode": "4",
+                          "season": "5",
+                          "series": "Columbo",
+                          "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%205/Columbo%20Season5%20A%20Matter%20of%20Honor.mp4",
+                          "title": "A Matter of Honor"
+                        },
+                        {
+                          "episode": "5",
+                          "season": "5",
+                          "series": "Columbo",
+                          "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%205/Columbo%20Season5%20Now%20You%20See%20Him.mp4",
+                          "title": "Now you See Him"
+                        },
+                        {
+                          "episode": "6",
+                          "season": "5",
+                          "series": "Columbo",
+                          "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%205/Columbo%20Season5%20Last%20Salute%20to%20the%20Commodore.mp4",
+                          "title": "Last Salute to the Commodore"     
+                        }
+                    ],
+                    "season": "Columbo Season 5"
+                },
+                {
+                  "episodes": [
+                      {
+                         "episode": "1",
+                         "season": "6",
+                         "series": "Columbo",
+                         "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%206/Columbo%20Season%206%20-%20Fade%20in%20to%20Murder.mp4",
+                         "title": "Fade In To Murder"
+                      },
+                      {
+                         "episode": "2",
+                         "season": "6",
+                         "series": "Columbo",
+                         "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%206/Columbo%20Season%206%20-%20Old-Fashioned%20Murder.mp4",
+                         "title": "Old Fashioned Murder"
+                      },
+                      {
+                        "episode": "3",
+                        "season": "6",
+                        "series": "Columbo",
+                        "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%206/Columbo%20Season%206%20-%20The%20Bye-Bye%20Sky-High%20IQ%20Murder%20Case.mp4",
+                        "title": "The Bye-Bye Sky High I.Q. Murder Case"
+                      }
+                  ],
+                  "season": "Columbo Season 6"
+                },
+                {
+                  "episodes": [
+                      {
+                        "episode": "1",
+                        "season": "7",
+                        "series": "Columbo",
+                        "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%207/Columbo%20Season%207%20-%20Try%20and%20Catch%20Me.mp4",
+                        "title": "Try And Catch Me"
+                      },
+                      {
+                        "episode": "2",
+                        "season": "7",
+                        "series": "Columbo",
+                        "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%207/Columbo%20Season%207%20-%20Murder%20Under%20Glass.mp4",
+                        "title": "Murder Under Glass"
+                      },
+
+                      {
+                        "episode": "4",
+                        "season": "7",
+                        "series": "Columbo",
+                        "source": "http://192.168.1.4/TVShows/Columbo_1971/Columbo%20Season%207/Columbo%20Season%207%20-%20How%20to%20Dial%20a%20Murder.mp4",
+                        "title": "How To Dial A Murder"
+                      }
+                  ],
+                  "season": "Columbo Season 7"
+                }
+            ],
+            "title": "Columbo",
+            "year": "1971"
+        },
+        {
+            "seasons": [
+              {
+                 "episodes": [
+                     {
+                        "episode": "1",
+                        "season": "3",
+                        "series": "Homeland",
+                        "source": "http://www.amazon.co.uk/gp/product/B00IIFELIQ/ref=avod_yvl_watch_now",
+                        "title": "Tin Man is Down"
+                     },
+                     {
+                        "episode": "2",
+                        "season": "3",
+                        "series": "Homeland",
+                        "source": "http://www.amazon.co.uk/gp/product/B00IIEIL2O/ref=avod_yvl_watch_now",
+                        "title": "Uh...Oo...Aw..."
+                     },
+                     {
+                        "episode": "3",
+                        "season": "3",
+                        "series": "Homeland",
+                        "source": "http://www.amazon.co.uk/gp/product/B00IIEMDSM/ref=avod_yvl_watch_now",
+                        "title": "Tower of David"
+                     }
+
+                 ],
+                 "season": "Homeland Season 3"
+              }
+            ],
+            "title": "Homeland",
+            "year": "2011"
+        },
+        {
+            "seasons": [
+              {
+                "episodes": [
+                    {
+                        "episode": "13",
+                        "season": "2",
+                        "series": "House of Cards",
+                        "source": "http://www.netflix.com/watch/70293591?trkid=13078940#episodeId=80017461&trackId=200257858",
+                        "title": "Chapter 26"
+                    }
+                ],
+                "season": "House of Cards Season 3"
+              }
+            ],
+            "title": "House of Cards",
+            "year": "2013"
+        },
+        {
+            "seasons": [],
+            "title": "MacGyver",
+            "year": "1985"
+        },
+        {
+            "seasons": [
+                {
+                    "episodes": [
+                        {
+                            "episode": "4",
+                            "season": "1",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%201/Seinfeld%20-%20Male%20Unbonding.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "1",
+                            "season": "1",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%201/Seinfeld%20-%20The%20Chronicles.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "3",
+                            "season": "1",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%201/Seinfeld%20-%20The%20Robbery.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "2",
+                            "season": "1",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%201/Seinfeld%20-%20The%20Stake%20Out.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "5",
+                            "season": "1",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%201/Seinfeld%20-%20The%20Stock%20Tip.mp4",
+                            "title": "Seinfeld"
+                        }
+                    ],
+                    "season": "Seinfeld Season 1"
+                },
+                {
+                    "episodes": [
+                        {
+                            "episode": "10",
+                            "season": "2",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%202/Seinfeld%20-%20The%20Baby%20Shower.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "12",
+                            "season": "2",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%202/Seinfeld%20-%20The%20Busboy.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "1",
+                            "season": "2",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%202/Seinfeld%20-%20The%20Ex%20Girlfriend.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "3",
+                            "season": "2",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%202/Seinfeld%20-%20The%20Jacket.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "2",
+                            "season": "2",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%202/Seinfeld%20-%20The%20Pony%20Remark.mp4",
+                            "title": "Seinfeld"
+                        }
+                    ],
+                    "season": "Seinfeld Season 2"
+                },
+                {
+                    "episodes": [
+                       {
+                          "episode": "1",
+                          "season": "3",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%203/Seinfeld%20-%20The%20Note.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "2",
+                          "season": "3",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%203/Seinfeld%20-%20The%20Truth.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "3",
+                          "season": "3",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%203/Seinfeld%20-%20The%20Pen.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "4",
+                          "season": "3",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%203/Seinfeld%20-%20The%20Dog.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "5",
+                          "season": "3",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%203/Seinfeld%20-%20The%20Library.mp4",
+                          "title": "Seinfeld"
+                       }
+                    ],
+                    "season": "Seinfeld Season 3"
+                },
+                {
+                    "episodes": [
+                       {
+                          "episode": "1",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Trip%20-%20Part%201.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "2",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Trip%20-%20Part%202.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "5",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Wallet.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "6",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Watch.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "7",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Bubble%20Boy.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "8",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Cheever%20Letters.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "9",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Opera.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "10",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Virgin.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "11",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Contest.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "12",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Airport.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "13",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Pick.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "14",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Movie.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "15",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Visa.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "16",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Shoes.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "17",
+                          "season": "4",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%204/Seinfeld%20-%20The%20Outing.mp4",
+                          "title": "Seinfeld"
+                       }
+                    ],
+                    "season": "Seinfeld Season 4"
+                },
+                {
+                    "episodes": [
+                       {
+                          "episode": "17",
+                          "season": "5",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%205/Seinfeld%20-%20The%20Wife.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "19",
+                          "season": "5",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%205/Seinfeld%20-%20The%20Raincoats.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "20",
+                          "season": "5",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%205/Seinfeld%20-%20The%20Fire.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "21",
+                          "season": "5",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%205/Seinfeld%20-%20The%20Hamptons.mp4",
+                          "title": "Seinfeld"
+                       },
+                       {
+                          "episode": "22", 
+                          "season": "5",
+                          "series": "Seinfeld",
+                          "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%205/Seinfeld%20-%20The%20Opposite.mp4",
+                          "title": "Seinfeld"
+                       }
+                    ],
+                    "season": "Seinfeld Season 5"
+                },
+                {
+                    "episodes": [
+                        {
+                            "episode": "1",
+                            "season": "6",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%206/Seinfeld%20-%20The%20Chaperone.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "2",
+                            "season": "6",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%206/Seinfeld%20-%20The%20Big%20Salad.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "3",
+                            "season": "6",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%206/Seinfeld%20-%20The%20Pledge%20Drive.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "4",
+                            "season": "6",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%206/Seinfeld%20-%20The%20Chinese%20Woman.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "5",
+                            "season": "6",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%206/Seinfeld%20-%20The%20Couch.mp4",
+                            "title": "Seinfeld"
+                        },
+                        {
+                            "episode": "6",
+                            "season": "6",
+                            "series": "Seinfeld",
+                            "source": "http://192.168.1.4/TVShows/Seinfeld_1989/Seinfeld%20Season%206/Seinfeld%20-%20The%20Gymnast.mp4",
+                            "title": "Seinfeld"
+                        }
+                    ],
+                    "season": "Seinfeld Season 6"
+                }
+            ],
+            "title": "Seinfeld",
+            "year": "1989"
+        },
+        {
+            "seasons": [
+                {
+                    "episodes": [
+                        {
+                            "episode": "5",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-2-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "6",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-2-3.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "7",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-2-4.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "8",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-2-5.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "1",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "9",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-3-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "10",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-3-3.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "11",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-3-4.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "12",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-3-5.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "2",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-3.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "13",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-4-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "14",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-4-3.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "15",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-4-4.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "16",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-4-5.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "3",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-4.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "17",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-5-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "18",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-5-3.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "19",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-5-4.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "20",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-5-5.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "4",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-5.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "21",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-6-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "22",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-6-3.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "23",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-6-4.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "24",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-6-5.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "25",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-7-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "26",
+                            "season": "4",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%204/Eu%20109554-7-3.mp4",
+                            "title": ""
+                        }
+                    ],
+                    "season": "Season 4"
+                },
+                {
+                    "episodes": [
+                        {
+                            "episode": "5",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-2-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "6",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-2-3.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "7",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-2-4.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "8",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-2-5.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "1",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "9",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-3-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "10",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-3-3.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "11",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-3-4.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "12",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-3-5.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "2",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-3.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "13",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-4-2.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "14",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-4-3.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "15",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-4-4.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "16",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-4-5.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "3",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-4.mp4",
+                            "title": ""
+                        },
+                        {
+                            "episode": "4",
+                            "season": "7",
+                            "series": "Star Trek The Next Generation",
+                            "source": "http://192.168.1.4/TVShows/Star%20Trek%20The%20Next%20Generation_1987/Season%207/Eu%20109557-5.mp4",
+                            "title": ""
+                        }
+                    ],
+                    "season": "Season 7"
+                }
+            ],
+            "title": "Star Trek The Next Generation",
+            "year": "1987"
+        },
+        {
+            "seasons": [
+              {
+                 "episodes": [
+                  {
+                     "episode": "3",
+                     "season": "1",
+                     "series": "Starsky and Hutch",
+                     "source": "http://192.168.1.4/TVShows/Starsky%20and%20Hutch_1975/Starsky%20and%20Hutch%20Season%201/Starsky%20And%20Hutch%20Series1%20Death%20Ride.mp4",
+                     "title": "Starsky and Hutch"
+                  }
+                 ],
+                 "season": "Season 1"
+              }
+            ],
+            "title": "Starsky and Hutch",
+            "year": "1975"
+        }
+    ]
+}
