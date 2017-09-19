@@ -9,7 +9,29 @@
       <script>
       	var term = new Terminal();
         term.open(document.getElementById('terminal'));
-        term.write('Hello from \033[1;3;31mxterm.js\033[0m $ ')
+     term.writeln('');
+  term.prompt();
+
+  term.on('key', function (key, ev) {
+    var printable = (
+      !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
+    );
+
+    if (ev.keyCode == 13) {
+      term.prompt();
+    } else if (ev.keyCode == 8) {
+     // Do not delete the prompt
+      if (term.x > 2) {
+        term.write('\b \b');
+      }
+    } else if (printable) {
+      term.write(key);
+    }
+  });
+
+  term.on('paste', function (data, ev) {
+    term.write(data);
+  });
       </script>
     </body>
   </html>
