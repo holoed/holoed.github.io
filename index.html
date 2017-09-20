@@ -37,6 +37,7 @@
 
             if (ev.keyCode == 13) {
               term.writeln('')
+              term.writeln(currentCommand)
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (currentCommand))))))));
               var js = codegen.toJs(progAst)
               term.write(js)
