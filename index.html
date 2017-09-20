@@ -34,7 +34,8 @@
 
             if (ev.keyCode == 13) {
               term.writeln('')
-              term.write("Working on it ;-)")
+              var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList ("42"))))))));
+              term.write(progAst)
               term.prompt();
             } else if (ev.keyCode == 8) {
              // Do not delete the prompt
@@ -45,10 +46,6 @@
               term.write(key);
             }
           });
-
-          var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList ("let x = 42 in x"))))))))
-
-          console.log("This is the parser " + progAst)
         });
       });
       </script>
