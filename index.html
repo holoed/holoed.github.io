@@ -9,6 +9,8 @@
     <body>
       <div id="terminal"></div>
       <script>
+       SystemJS.import('./javascripts/CodeV4/Externals.js');
+       SystemJS.import('./javascripts/CodeV4/Base.js');
        SystemJS.import('./javascripts/CodeV4/Parser.js');
 
        var term = new Terminal({
