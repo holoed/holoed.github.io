@@ -54,7 +54,7 @@
             } else if (ev.keyCode == 38) {
               currentCommand = prevCommand;
               term.write(currentCommand);
-            } else if (ev.keyCode == 40) {
+            } else if (ev.code == "ArrowDown") {
               console.log("not implemented")
             }else if (printable) {
               currentCommand = currentCommand + key;
