@@ -12,6 +12,7 @@
        SystemJS.import('./javascripts/CodeV4/Externals.js').then(function (ext) {
        SystemJS.import('./javascripts/CodeV4/Base.js');
        SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
+       SystemJS.import('./javascripts/CodeV4/CodeGenerator.js').then(function (codegen) {
 
        var term = new Terminal({
           cursorBlink: true,  // Do not blink the terminal's cursor
@@ -37,7 +38,8 @@
             if (ev.keyCode == 13) {
               term.writeln('')
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (currentCommand))))))));
-              term.write(progAst)
+              var js = codegen.toJs(progAst)
+              term.write(js)
               term.prompt();
               currentCommand = "";
             } else if (ev.keyCode == 8) {
@@ -52,6 +54,7 @@
           });
         });
       });
+    });
       </script>
     </body>
   </html>
