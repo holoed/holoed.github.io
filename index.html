@@ -53,7 +53,10 @@
               }
             } else if (ev.keyCode == 38) {
               currentCommand = prevCommand;
-            } else if (printable) {
+              term.write(currentCommand);
+            } else if (ev.keyCode == 40) {
+              console.log("not implemented")
+            }else if (printable) {
               currentCommand = currentCommand + key;
               term.write(key);
             }
