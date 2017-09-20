@@ -32,9 +32,9 @@
               term.prompt();
             } else if (ev.keyCode == 8) {
              // Do not delete the prompt
-              //if (term.x > 2) {
+              if (term.buffer.x > shellprompt.length) {
                 term.write('\b \b');
-            //  }
+              }
             } else if (printable) {
               term.write(key);
             }
