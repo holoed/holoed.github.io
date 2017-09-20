@@ -41,7 +41,8 @@
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (currentCommand))))))));
               var js = codegen.toJs(progAst)
               term.write(js)
-              term.write(eval("(function(){ " + js + " })()"))
+              var ret = eval("(function(){ " + js + " })()");
+              term.writeln(ret)
               term.prompt();
               currentCommand = "";
             } else if (ev.keyCode == 8) {
