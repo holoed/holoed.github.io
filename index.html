@@ -3,10 +3,13 @@
     <head>
       <link rel="stylesheet" href="javascripts/xterm/dist/xterm.css" />
       <script src="javascripts/xterm/dist/xterm.js"></script>
+      <script src="javascripts/systemjs/dist/system.js"></script>
     </head>
     <body>
       <div id="terminal"></div>
       <script>
+       SystemJS.import('./javascripts/CodeV4/Parser.js');
+
        var term = new Terminal({
           cursorBlink: true,  // Do not blink the terminal's cursor
           cols: 120,  // Set the terminal's width to 120 columns
