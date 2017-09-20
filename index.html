@@ -27,6 +27,7 @@
           term.write(shellprompt);
         };
 
+        var prevCommand = "";
         var currentCommand = "";
 
         term.prompt();
@@ -42,6 +43,7 @@
               var ret = eval("(function(){ " + js + " })()");
               term.writeln("\r\n" + ret.toString())
               term.prompt();
+              prevCommand = currentCommand;
               currentCommand = "";
             } else if (ev.keyCode == 8) {
              // Do not delete the prompt
@@ -49,6 +51,8 @@
                 currentCommand = currentCommand.substring(0, currentCommand.length-1);
                 term.write('\b \b');
               }
+            } else if (ev.keyCode == 38) {
+              currentCommand = prevCommand;
             } else if (printable) {
               currentCommand = currentCommand + key;
               term.write(key);
