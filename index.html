@@ -9,7 +9,7 @@
     <body>
       <div id="terminal"></div>
       <script>
-       SystemJS.import('./javascripts/CodeV4/Externals.js');
+       SystemJS.import('./javascripts/CodeV4/Externals.js').then(function (ext) {
        SystemJS.import('./javascripts/CodeV4/Base.js');
        SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
 
@@ -46,8 +46,11 @@
             }
           });
 
+          var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList ("let x = 42 in x"))))))))
+
           console.log("This is the parser " + parser.progP)
         });
+      });
       </script>
     </body>
   </html>
