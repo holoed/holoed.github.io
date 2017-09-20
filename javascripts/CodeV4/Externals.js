@@ -1,5 +1,3 @@
-var fs = require('fs')
-
 var Cons = function(head, tail) {
   this.head = head;
   this.tail = tail;
@@ -227,18 +225,6 @@ var startsWith = function (s1) {
   }
 }
 
-var readFile = function (path) {
-  return fs.readFileSync(path, 'UTF8');
-}
-
-var writeFile = function (path) {
-  return function (content) {
-    fs.writeFileSync(path, content)
-    console.log(content)
-    console.log(path + " file saved.")
-  }
-}
-
 var replaceExtensionToJs = function (s) {
   return s.substr(0, s.lastIndexOf(".")) + ".js";
 }
@@ -246,7 +232,7 @@ var replaceExtensionToJs = function (s) {
 var addEntry = function (k) {
   return function (v) {
     return function (dict) {
-      var dict2 = Object.assign({}, dict); 
+      var dict2 = Object.assign({}, dict);
       dict2[k] = v
       return dict2;
     }
@@ -337,8 +323,6 @@ exports.extractProg = extractProg;
 exports.extractImport = extractImport;
 exports.show = show;
 exports.startsWith = startsWith;
-exports.readFile = readFile;
-exports.writeFile = writeFile;
 exports.replaceExtensionToJs = replaceExtensionToJs;
 exports.containsKey = containsKey;
 exports.findValue = findValue;
