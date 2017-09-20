@@ -7,31 +7,38 @@
     <body>
       <div id="terminal"></div>
       <script>
-      	var term = new Terminal();
+       var term = new Terminal({
+          cursorBlink: true,  // Do not blink the terminal's cursor
+          cols: 120,  // Set the terminal's width to 120 columns
+          rows: 80  // Set the terminal's height to 80 rows
+          });
         term.open(document.getElementById('terminal'));
-     term.writeln('');
-  term.prompt();
 
-  term.on('key', function (key, ev) {
-    var printable = (
-      !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
-    );
+        var shellprompt = ' junior> ';
 
-    if (ev.keyCode == 13) {
-      term.prompt();
-    } else if (ev.keyCode == 8) {
-     // Do not delete the prompt
-      if (term.x > 2) {
-        term.write('\b \b');
-      }
-    } else if (printable) {
-      term.write(key);
-    }
-  });
+        term.prompt = function () {
+          term.write('\r\n' + shellprompt);
+        };
 
-  term.on('paste', function (data, ev) {
-    term.write(data);
-  });
+        term.prompt();
+        term.on('key', function (key, ev) {
+            var printable = (
+              !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
+            );
+
+            if (ev.keyCode == 13) {
+              term.writeln('')
+              term.write("Working on it ;-)")
+              term.prompt();
+            } else if (ev.keyCode == 8) {
+             // Do not delete the prompt
+              if (term.x > 2) {
+                term.write('\b \b');
+              }
+            } else if (printable) {
+              term.write(key);
+            }
+          });
       </script>
     </body>
   </html>
