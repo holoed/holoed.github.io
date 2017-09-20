@@ -36,11 +36,10 @@
             );
 
             if (ev.keyCode == 13) {
-              term.writeln('')
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (currentCommand))))))));
               var js = codegen.toJs(progAst)
               var ret = eval("(function(){ " + js + " })()");
-              term.writeln(ret)
+              term.writeln(" " + ret)
               term.prompt();
               currentCommand = "";
             } else if (ev.keyCode == 8) {
