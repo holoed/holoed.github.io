@@ -11,7 +11,9 @@
       <script>
        SystemJS.import('./javascripts/CodeV4/Externals.js');
        SystemJS.import('./javascripts/CodeV4/Base.js');
-       SystemJS.import('./javascripts/CodeV4/Parser.js');
+       SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
+         console.log(parser.progP)
+       });
 
        var term = new Terminal({
           cursorBlink: true,  // Do not blink the terminal's cursor
