@@ -21,10 +21,10 @@
           });
         term.open(document.getElementById('terminal'));
 
-        var shellprompt = ' junior> ';
+        var shellprompt = 'junior> ';
 
         term.prompt = function () {
-          term.write('\r\n' + shellprompt);
+          term.write(shellprompt);
         };
 
         var currentCommand = "";
