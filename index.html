@@ -42,7 +42,7 @@
           term.write(shellprompt);
         };
 
-        var getCurrentCommand(y) = function() {
+        var getCurrentCommand = function(y) {
           term.children[y].innerText
            .slice(8)
            .trim()
