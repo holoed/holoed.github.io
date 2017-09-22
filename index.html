@@ -17,11 +17,12 @@
       <div id="terminal"></div>
       <script>
        SystemJS.import('./javascripts/CodeV4/Externals.js').then(function (ext) {
-       SystemJS.import('./javascripts/CodeV4/Base.js');
+       SystemJS.import('./javascripts/CodeV4/Base.js').then(function (base) {
        SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
        SystemJS.import('./javascripts/CodeV4/CodeGenerator.js').then(function (codegen) {
 
        var { cons, isEmpty, head, tail, empty, fst, snd, mkTuple2 } = ext;
+       var { compose, foldLeft, foldRight, range, concat, append, fmap } = base;
 
        var term = new Terminal({
           cursorBlink: true,  // Do not blink the terminal's cursor
@@ -73,6 +74,7 @@
         });
       });
     });
+  });
       </script>
     </body>
   </html>
