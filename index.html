@@ -74,7 +74,7 @@
             } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp") {
               console.log("not supported")
             }else if (printable) {
-              if (ev.code == "ArrowLeft" || ev.code == "ArrowRight") {
+              if (ev.code != "ArrowLeft" || ev.code != "ArrowRight") {
                 currentCommand = currentCommand.replaceAt(currentIndex, key);
               }
               term.write(key);
