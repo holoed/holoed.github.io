@@ -45,7 +45,8 @@
 
             if (ev.keyCode == 13) {
               term.write('')
-              var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (currentCommand))))))));
+              var code = "import Externals (cons, isEmpty, head, tail, nil)\r\n\r\n" + currentCommand
+              var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (code))))))));
               var js = codegen.toJs(progAst)
               var ret = eval("(function(){ " + js + " })()");
               term.writeln("\r\n" + ret.toString())
