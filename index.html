@@ -16,7 +16,6 @@
       </pre>
       <div id="terminal"></div>
       <script>
-       SystemJS.import('./javascripts/htmltotext/dist/html-to-text.js').then(function(htmlToText) {
        SystemJS.import('./javascripts/CodeV4/Externals.js').then(function (ext) {
        SystemJS.import('./javascripts/CodeV4/Base.js').then(function (base) {
        SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
@@ -43,9 +42,19 @@
         };
 
         var getCurrentCommand = function(y) {
-          return htmlToText.fromString(term.children[y].innerText.slice(8).trim(), {
-            wordwrap: 130
-          });
+          return term.children[y].innerText
+           .slice(8)
+           .trim()
+           .replace(/\xA0/g," ")
+           .replace(/\x28/g,"(")
+           .replace(/\x29/g,")")
+           .replace(/\x2A/g,"*")
+           .replace(/\x2B/g,"+")
+           .replace(/\x26/g,"&")
+           .replace(/\x2F/g,"/")
+           .replace(/\x3C/g,"<")
+           .replace(/\x3D/g,"=")
+           .replace(/\x3E/g,">");
         }
 
         term.prompt();
@@ -80,7 +89,6 @@
       });
     });
   });
-});
       </script>
     </body>
   </html>
