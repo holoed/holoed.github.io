@@ -39,9 +39,12 @@
 
         var prevCommand = "";
         var currentCommand = "";
+        var currentIndex = 0;
 
         term.prompt();
         term.on('key', function (key, ev) {
+            currentIndex = term.buffer.x - shellprompt.length
+            console.log(currentIndex)
             var printable = (
               !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
             );
