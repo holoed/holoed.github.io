@@ -68,7 +68,7 @@
                 currentCommand = getCurrentCommand(term.buffer.y);
               }
             } else if (ev.keyCode == 38) {
-              currentCommand = getCurrentCommand(term.buffer.y - 1);
+              currentCommand = getCurrentCommand(term.buffer.y - 2);
               term.write(currentCommand);
             } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp") {
               console.log("not supported")
