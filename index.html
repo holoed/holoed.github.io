@@ -50,7 +50,7 @@
             currentIndex = term.buffer.x - shellprompt.length
             console.log(currentIndex)
             var printable = (
-              !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
+              !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey && !ev.code == "ArrowLeft" && !ev.code == "ArrowRight"
             );
 
             if (ev.keyCode == 13) {
