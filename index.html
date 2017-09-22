@@ -46,7 +46,7 @@
           term.children[y].innerText
            .slice(8)
            .trim()
-           .Replace(Convert.ToChar(160), ' ')
+           .replace(/\xA0/g," ");
         }
 
         term.prompt();
