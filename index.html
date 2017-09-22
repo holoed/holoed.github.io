@@ -42,7 +42,7 @@
         };
 
         var getCurrentCommand = function(y) {
-          term.children[y].innerText
+          return term.children[y].innerText
            .slice(8)
            .trim()
            .replace(/\xA0/g," ");
