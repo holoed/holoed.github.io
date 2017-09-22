@@ -46,7 +46,6 @@
             var printable = (
               !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
             );
-
             if (ev.keyCode == 13) {
               term.write('')
               var currentCommand = term.children[term.buffer.y].innerText;
@@ -58,8 +57,8 @@
             } else if (ev.keyCode == 8) {
              // Do not delete the prompt
               if (term.buffer.x > shellprompt.length) {
-                currentCommand = currentCommand.substring(0, currentCommand.length-1);
                 term.write('\b \b');
+                currentCommand = term.children[term.buffer.y - 1].innerText;
               }
             } else if (ev.keyCode == 38) {
               currentCommand = term.children[term.buffer.y - 1].innerText;
