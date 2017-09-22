@@ -42,6 +42,13 @@
           term.write(shellprompt);
         };
 
+        var getCurrentCommand(y) = function() {
+          term.children[y].innerText
+           .slice(8)
+           .trim()
+           .Replace(Convert.ToChar(160), ' ')
+        }
+
         term.prompt();
         term.on('key', function (key, ev) {
             var printable = (
@@ -49,7 +56,7 @@
             );
             if (ev.keyCode == 13) {
               term.write('')
-              var currentCommand = term.children[term.buffer.y].innerText.slice(8).trim();
+              var currentCommand = getCurrentCommand(term.buffer.y);
               console.log(currentCommand == myCmd);
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (myCmd))))))));
               var js = codegen.toJs(progAst)
@@ -60,10 +67,10 @@
              // Do not delete the prompt
               if (term.buffer.x > shellprompt.length) {
                 term.write('\b \b');
-                currentCommand = term.children[term.buffer.y].innerText.slice(8).trim();
+                currentCommand = getCurrentCommand(term.buffer.y);
               }
             } else if (ev.keyCode == 38) {
-              currentCommand = term.children[term.buffer.y - 1].innerText.slice(8).trim();
+              currentCommand = getCurrentCommand(term.buffer.y - 1);
               term.write(currentCommand);
             } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp") {
               console.log("not supported")
