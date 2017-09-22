@@ -24,6 +24,10 @@
        var { cons, isEmpty, head, tail, empty, fst, snd, mkTuple2 } = ext;
        var { compose, foldLeft, foldRight, range, concat, append, fmap } = base;
 
+       String.prototype.replaceAt=function(index, replacement) {
+           return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
+        }
+
        var term = new Terminal({
           cursorBlink: true,  // Do not blink the terminal's cursor
           cols: 120,  // Set the terminal's width to 120 columns
@@ -70,7 +74,7 @@
             } else if (ev.code == "ArrowDown") {
               console.log("not implemented")
             }else if (printable) {
-              currentCommand = currentCommand + key;
+              currentCommand = currentCommand.replaceAt(currentIndex, key);
               term.write(key);
             }
           });
