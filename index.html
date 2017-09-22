@@ -45,7 +45,9 @@
           return term.children[y].innerText
            .slice(8)
            .trim()
-           .replace(/\xA0/g," ");
+           .replace(/\xA0/g," ")
+           .replace(/\x28/g,"(")
+           .replace(/\x29/g,")");
         }
 
         term.prompt();
