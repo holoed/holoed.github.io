@@ -50,7 +50,7 @@
             currentIndex = term.buffer.x - shellprompt.length
             console.log(currentIndex)
             var printable = (
-              !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey && ev.code != "ArrowLeft" && ev.code != "ArrowRight"
+              !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
             );
 
             if (ev.keyCode == 13) {
@@ -71,8 +71,8 @@
             } else if (ev.keyCode == 38) {
               currentCommand = prevCommand;
               term.write(currentCommand);
-            } else if (ev.code == "ArrowDown") {
-              console.log("not implemented")
+            } else if (ev.code == "ArrowDown" && ev.code == "ArrowUp" && ev.code != "ArrowLeft" && ev.code != "ArrowRight") {
+              console.log("not supported")
             }else if (printable) {
               currentCommand = currentCommand.replaceAt(currentIndex, key);
               term.write(key);
