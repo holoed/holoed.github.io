@@ -21,6 +21,8 @@
        SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
        SystemJS.import('./javascripts/CodeV4/CodeGenerator.js').then(function (codegen) {
 
+       var { cons, isEmpty, head, tail, nil } = ext;
+
        var term = new Terminal({
           cursorBlink: true,  // Do not blink the terminal's cursor
           cols: 120,  // Set the terminal's width to 120 columns
@@ -45,8 +47,7 @@
 
             if (ev.keyCode == 13) {
               term.write('')
-              var code = "import Externals (cons, isEmpty, head, tail, nil)\r\n\r\n" + currentCommand
-              var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (code))))))));
+              var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (currentCommand))))))));
               var js = codegen.toJs(progAst)
               var ret = eval("(function(){ " + js + " })()");
               term.writeln("\r\n" + ret.toString())
