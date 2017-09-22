@@ -36,7 +36,6 @@
         term.open(document.getElementById('terminal'));
 
         var shellprompt = 'junior> ';
-        var myCmd = "";
 
         term.prompt = function () {
           term.write(shellprompt);
@@ -57,8 +56,7 @@
             if (ev.keyCode == 13) {
               term.write('')
               var currentCommand = getCurrentCommand(term.buffer.y);
-              console.log(currentCommand == myCmd);
-              var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (myCmd))))))));
+              var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (currentCommand))))))));
               var js = codegen.toJs(progAst)
               var ret = eval("(function(){ " + js + " })()");
               term.writeln("\r\n" + ret.toString())
@@ -75,7 +73,6 @@
             } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp") {
               console.log("not supported")
             }else if (printable) {
-              myCmd = myCmd + key
               term.write(key);
             }
           });
