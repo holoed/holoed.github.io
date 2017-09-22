@@ -71,10 +71,12 @@
             } else if (ev.keyCode == 38) {
               currentCommand = prevCommand;
               term.write(currentCommand);
-            } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp" || ev.code == "ArrowLeft" || ev.code == "ArrowRight") {
+            } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp") {
               console.log("not supported")
             }else if (printable) {
-              currentCommand = currentCommand.replaceAt(currentIndex, key);
+              if (ev.code == "ArrowLeft" || ev.code == "ArrowRight") {
+                currentCommand = currentCommand.replaceAt(currentIndex, key);
+              }
               term.write(key);
             }
           });
