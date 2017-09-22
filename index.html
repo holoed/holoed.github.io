@@ -48,7 +48,7 @@
             );
             if (ev.keyCode == 13) {
               term.write('')
-              var currentCommand = term.children[term.buffer.y].innerText.slice(8);
+              var currentCommand = term.children[term.buffer.y].innerText.slice(8).trim();
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (currentCommand))))))));
               var js = codegen.toJs(progAst)
               var ret = eval("(function(){ " + js + " })()");
@@ -58,10 +58,10 @@
              // Do not delete the prompt
               if (term.buffer.x > shellprompt.length) {
                 term.write('\b \b');
-                currentCommand = term.children[term.buffer.y - 1].innerText.slice(8);
+                currentCommand = term.children[term.buffer.y - 1].innerText.slice(8).trim();
               }
             } else if (ev.keyCode == 38) {
-              currentCommand = term.children[term.buffer.y - 1].innerText.slice(8);
+              currentCommand = term.children[term.buffer.y - 1].innerText.slice(8).trim();
               term.write(currentCommand);
             } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp") {
               console.log("not supported")
