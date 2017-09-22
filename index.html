@@ -41,27 +41,20 @@
           term.write(shellprompt);
         };
 
-        var prevCommand = "";
-        var currentCommand = "";
-        var currentIndex = 0;
-
         term.prompt();
         term.on('key', function (key, ev) {
-            currentIndex = term.buffer.x - shellprompt.length
-            console.log(currentIndex)
             var printable = (
               !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
             );
 
             if (ev.keyCode == 13) {
               term.write('')
+              var currentCommand = term.children[term.buffer.y].innerText;
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (currentCommand))))))));
               var js = codegen.toJs(progAst)
               var ret = eval("(function(){ " + js + " })()");
               term.writeln("\r\n" + ret.toString())
               term.prompt();
-              prevCommand = currentCommand;
-              currentCommand = "";
             } else if (ev.keyCode == 8) {
              // Do not delete the prompt
               if (term.buffer.x > shellprompt.length) {
@@ -69,14 +62,11 @@
                 term.write('\b \b');
               }
             } else if (ev.keyCode == 38) {
-              currentCommand = prevCommand;
+              currentCommand = term.children[term.buffer.y - 1].innerText;
               term.write(currentCommand);
             } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp") {
               console.log("not supported")
             }else if (printable) {
-              if (ev.code != "ArrowLeft" && ev.code != "ArrowRight") {
-                currentCommand = currentCommand.replaceAt(currentIndex, key);
-              }
               term.write(key);
             }
           });
