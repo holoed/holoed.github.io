@@ -60,6 +60,11 @@
         var currentBuffer = []
 
         term.prompt();
+
+        term.on('paste', function(ev) {
+          console.log(ev)
+        });
+
         term.on('key', function (key, ev) {
             var printable = (
               !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
