@@ -62,7 +62,7 @@
         term.prompt();
 
         term.on('paste', function(ev) {
-          console.log(ev)
+          term.write(ev);
         });
 
         term.on('key', function (key, ev) {
