@@ -57,6 +57,8 @@
            .replace(/\x3E/g,">");
         }
 
+        var currentBuffer = []
+
         term.prompt();
         term.on('key', function (key, ev) {
             var printable = (
@@ -72,9 +74,13 @@
               var letMatches = letRegEx.exec(currentCommand)
 
               var commandToExec = null
-              if (inMatches == null && letMatches != null)
+              if (inMatches == null && letMatches != null) {
+                currentBuffer.push(currentCommand)
                 commandToExec = currentCommand + " in " + letMatches[1]
-              else commandToExec = currentCommand
+              }
+              else {
+                commandToExec = currentBuffer.join(" in ") + " in " + currentCommand 
+              }
 
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (commandToExec))))))));
               var js = codegen.toJs(progAst)
