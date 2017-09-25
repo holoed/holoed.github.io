@@ -288,6 +288,7 @@ exports.isSpace = isSpace;
 exports.isLower = isLower;
 exports.isUpper = isUpper;
 exports.empty = empty;
+exports.nil = nil;
 exports.mkTuple2 = mkTuple2;
 exports.fst = fst;
 exports.snd = snd;
