@@ -57,7 +57,7 @@
            .replace(/\x3E/g,">");
         }
 
-        var currentBuffer = ["let abcdefg = 0"]
+        var currentBuffer = []
 
         term.prompt();
         term.on('key', function (key, ev) {
@@ -79,7 +79,7 @@
                 commandToExec = currentCommand + " in " + letMatches[1]
               }
               else {
-                commandToExec = currentBuffer.join(" in ") + " in " + currentCommand
+                commandToExec = currentBuffer.join(" in ") + " in " + currentCommand 
               }
 
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (commandToExec))))))));
