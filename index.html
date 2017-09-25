@@ -65,7 +65,18 @@
             if (ev.keyCode == 13) {
               term.write('')
               var currentCommand = getCurrentCommand(term.buffer.y);
-              var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (currentCommand))))))));
+
+              var inRegEx = /in (\w+)/g
+              var letRegEx = /let (\w+)/g
+              var inMatches = inRegEx.exec(currentCommand)
+              var letMatches = letRegEx.exec(currentCommand)
+
+              var commandToExec = null
+              if (inMatches == null && letMatches != null)
+                commandToExec = currentCommand + " in " + letMatches[1]
+              else commandToExec = currentCommand
+
+              var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (commandToExec))))))));
               var js = codegen.toJs(progAst)
               var ret = eval("(function(){ " + js + " })()");
               term.writeln("\r\n" + ret.toString())
