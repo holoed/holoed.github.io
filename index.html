@@ -101,6 +101,7 @@
             } else if (ev.keyCode == 38) {
               currentCommand = getCurrentCommand(term.buffer.y - 2);
               term.eraseLine(term.buffer.y);
+              term.cursorPos([1, term.buffer.y]);
               term.prompt();
               term.write(currentCommand);
             } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp") {
