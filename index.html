@@ -99,7 +99,11 @@
                 currentCommand = getCurrentCommand(term.buffer.y);
               }
             } else if (ev.keyCode == 38) {
-              currentCommand = getCurrentCommand(term.buffer.y - 2);
+              var y = term.buffer.y - 1;
+              while (y > 1 && term.children[y].innerText.startsWith(shellprompt)) {
+                currentCommand = getCurrentCommand(y);
+                y = y - 1;
+              }
               term.eraseLine(term.buffer.y);
               term.buffer.x = 0;
               term.prompt();
