@@ -93,6 +93,9 @@
               if (typeof ret != "function") {
                 term.writeln("\r\n" + ret.toString())
                 term.prompt();
+              } else {
+                term.writeln('');
+                term.prompt();
               }
             } else if (ev.keyCode == 8) {
              // Do not delete the prompt
