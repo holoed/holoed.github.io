@@ -100,14 +100,16 @@
               }
             } else if (ev.keyCode == 38) {
               var y = term.buffer.y - 1;
-              while (y > 1 && term.children[y].innerText.startsWith(shellprompt)) {
+              while (y > -1 && term.children[y].innerText.startsWith(shellprompt)) {
                 currentCommand = getCurrentCommand(y);
                 y = y - 1;
               }
-              term.eraseLine(term.buffer.y);
-              term.buffer.x = 0;
-              term.prompt();
-              term.write(currentCommand);
+              if (y > -1) {
+                term.eraseLine(term.buffer.y);
+                term.buffer.x = 0;
+                term.prompt();
+                term.write(currentCommand);
+              }
             } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp") {
               console.log("not supported")
             }else if (printable) {
