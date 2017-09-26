@@ -90,8 +90,10 @@
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (commandToExec))))))));
               var js = codegen.toJs(progAst)
               var ret = eval("(function(){ " + js + " })()");
-              term.writeln("\r\n" + ret.toString())
-              term.prompt();
+              if (typeof ret != "function") {
+                term.writeln("\r\n" + ret.toString())
+                term.prompt();
+              }
             } else if (ev.keyCode == 8) {
              // Do not delete the prompt
               if (term.buffer.x > shellprompt.length) {
