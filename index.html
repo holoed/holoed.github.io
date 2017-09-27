@@ -42,7 +42,7 @@
         };
 
         var getCurrentCommand = function(y) {
-          return term.children[y].children[0].textContent
+          return term.children[y].children[0].innerText
            .slice(8)
            .trim();
         }
