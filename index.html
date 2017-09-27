@@ -42,19 +42,9 @@
         };
 
         var getCurrentCommand = function(y) {
-          return term.children[y].innerText
+          return term.buffer.translateBufferLineToString(y)
            .slice(8)
-           .trim()
-           .replace(/\xA0/g," ")
-           .replace(/\x28/g,"(")
-           .replace(/\x29/g,")")
-           .replace(/\x2A/g,"*")
-           .replace(/\x2B/g,"+")
-           .replace(/\x26/g,"&")
-           .replace(/\x2F/g,"/")
-           .replace(/\x3C/g,"<")
-           .replace(/\x3D/g,"=")
-           .replace(/\x3E/g,">");
+           .trim();
         }
 
         var currentBuffer = ["let answer = 42"]
