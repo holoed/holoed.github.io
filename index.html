@@ -42,19 +42,9 @@
         };
 
         var getCurrentCommand = function(y) {
-          return term.children[y].innerText
+          return term.children[y].children[0].textContent
            .slice(8)
-           .trim()
-           .replace(/\xA0/g," ")
-           .replace(/\x28/g,"(")
-           .replace(/\x29/g,")")
-           .replace(/\x2A/g,"*")
-           .replace(/\x2B/g,"+")
-           .replace(/\x26/g,"&")
-           .replace(/\x2F/g,"/")
-           .replace(/\x3C/g,"<")
-           .replace(/\x3D/g,"=")
-           .replace(/\x3E/g,">");
+           .trim();
         }
 
         var currentBuffer = ["let answer = 42"]
@@ -103,13 +93,13 @@
                 term.write('\b \b');
                 currentCommand = getCurrentCommand(term.buffer.y);
               }
-            } else if (ev.keyCode == 38) {
+            } else if (ev.code == "ArrowUp") {
               currentCommand = getCurrentCommand(term.buffer.y - 2);
               term.eraseLine(term.buffer.y);
               term.buffer.x = 0;
               term.prompt();
               term.write(currentCommand);
-            } else if (ev.code == "ArrowDown" || ev.code == "ArrowUp") {
+            } else if (ev.code == "ArrowDown") {
               console.log("not supported")
             }else if (printable) {
               term.write(key);
