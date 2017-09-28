@@ -299,6 +299,13 @@ var listToArray = function(xs){
   return out;
 }
 
+var truncate = function(number){
+    return number > 0
+         ? Math.floor(number)
+         : Math.ceil(number);
+}
+
+exports.truncate = truncate;
 exports.isList = isList;
 exports.cons = cons;
 exports.isEmpty = isEmpty;
