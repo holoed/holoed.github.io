@@ -1,6 +1,7 @@
 var Cons = function(head, tail) {
   this.head = head;
   this.tail = tail;
+  this.isList = true;
 };
 
 Cons.prototype.isEmpty = false;
@@ -14,8 +15,14 @@ var Nil = {
 
   get tail() {
     throw new Error('Accessing tail on empty list.');
-  }
+  },
+
+  isList = true
 };
+
+var isList = function(xs) {
+  return xs.isList == true;
+}
 
 var nil = Nil;
 
@@ -287,9 +294,10 @@ var listToArray = function(xs){
     out.push(head(ys))
     ys = tail(ys)
   }
-  return out.slice();
+  return "[" + out + "]";
 }
 
+exports.isList = isList;
 exports.cons = cons;
 exports.isEmpty = isEmpty;
 exports.head = head;

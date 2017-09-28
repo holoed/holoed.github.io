@@ -21,7 +21,7 @@
        SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
        SystemJS.import('./javascripts/CodeV4/CodeGenerator.js').then(function (codegen) {
 
-       var { cons, isEmpty, head, tail, nil, fst, snd, mkTuple2, listToArray, empty } = ext;
+       var { cons, isEmpty, head, tail, nil, fst, snd, mkTuple2, listToArray, empty, isList } = ext;
        var { compose, foldLeft, foldRight, range, concat, append, fmap, take, drop, reverse } = base;
 
        String.prototype.replaceAt=function(index, replacement) {
@@ -40,6 +40,13 @@
         term.prompt = function () {
           term.write(shellprompt);
         };
+
+        var showResult = function (x) {
+          if (isList x)
+            return "[" + (listToArray (fmap(showResult)(x))) + "]";
+          else
+            return x.toString();
+        }
 
         var getCurrentCommand = function(y) {
           return term.children[y].innerText
@@ -91,7 +98,7 @@
               var js = codegen.toJs(progAst)
               var ret = eval("(function(){ " + js + " })()");
               if (typeof ret != "function") {
-                term.writeln("\r\n" + ret.toString())
+                term.writeln("\r\n" + showResult(ret))
                 term.prompt();
               } else {
                 term.writeln('');
