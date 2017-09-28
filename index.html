@@ -42,7 +42,9 @@
         };
 
         var showResult = function (x) {
-          if (isTuple(x))
+          if (typeof(x) == "string")
+            return '"' + x + '"';
+          else if (isTuple(x))
             return "(" + showResult (fst(x)) + ", " + showResult (snd(x)) + ")";
           else if (isList(x))
             return "[" + (listToArray (fmap(showResult)(x))) + "]";
