@@ -280,6 +280,16 @@ var not = function(x){
    else return true
 }
 
+var listToArray = function(xs){
+  var ys = xs
+  var out = []
+  while (!isEmpty(ys)) {
+    out.push(head(ys))
+    ys = tail(ys)
+  }
+  return out.slice();
+}
+
 exports.cons = cons;
 exports.isEmpty = isEmpty;
 exports.head = head;
