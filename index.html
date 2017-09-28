@@ -73,7 +73,10 @@
         term.prompt();
 
         term.on('paste', function(ev) {
-          term.write(ev);
+          var lines = ev.match(/[^\r\n]+/g);
+          for (var i = 0; i < lines.length; i++) {
+            term.writeln(lines[i]);
+          }
         });
 
         term.on('key', function (key, ev) {
