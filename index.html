@@ -75,7 +75,7 @@
         term.on('paste', function(ev) {
           var lines = ev.match(/[^\r\n]+/g);
           for (var i = 0; i < lines.length; i++) {
-            term.writeln(lines[i]);
+            term.write(lines[i]);
           }
         });
 
