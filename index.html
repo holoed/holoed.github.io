@@ -42,7 +42,7 @@
         };
 
         var showResult = function (x) {
-          if (isList x)
+          if (isList(x))
             return "[" + (listToArray (fmap(showResult)(x))) + "]";
           else
             return x.toString();
