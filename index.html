@@ -22,7 +22,7 @@
        SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
        SystemJS.import('./javascripts/CodeV4/CodeGenerator.js').then(function (codegen) {
 
-       var { cons, isEmpty, head, tail, nil, fst, snd, mkTuple2, listToArray, empty, isList, isTuple, truncate } = ext;
+       var { cons, isEmpty, head, tail, nil, fst, snd, mkTuple2, listToArray, empty, isList, isTuple, truncate, cos } = ext;
        var { compose, foldLeft, foldRight, range, concat, append, fmap, take, drop, reverse } = base;
 
        String.prototype.replaceAt=function(index, replacement) {

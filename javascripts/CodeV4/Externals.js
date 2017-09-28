@@ -307,6 +307,11 @@ var truncate = function(number){
          : Math.ceil(number);
 }
 
+var cos = function(x){
+  return Math.cos(x);
+}
+
+exports.cos = cos;
 exports.truncate = truncate;
 exports.isList = isList;
 exports.cons = cons;
