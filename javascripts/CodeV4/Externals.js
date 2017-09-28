@@ -17,7 +17,7 @@ var Nil = {
     throw new Error('Accessing tail on empty list.');
   },
 
-  isList = true
+  isList: true
 };
 
 var isList = function(xs) {
