@@ -22,7 +22,7 @@
        SystemJS.import('./javascripts/CodeV4/CodeGenerator.js').then(function (codegen) {
 
        var { cons, isEmpty, head, tail, nil, fst, snd, mkTuple2, listToArray } = ext;
-       var { compose, foldLeft, foldRight, range, concat, append, fmap } = base;
+       var { compose, foldLeft, foldRight, range, concat, append, fmap, take, drop, reverse } = base;
 
        String.prototype.replaceAt=function(index, replacement) {
            return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
@@ -42,7 +42,7 @@
         };
 
         var getCurrentCommand = function(y) {
-          return term.children[y].children[0].innerText
+          return term.children[y].innerText
            .slice(8)
            .trim()
            .replace(/\xA0/g," ")
