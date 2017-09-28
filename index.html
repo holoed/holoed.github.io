@@ -43,7 +43,7 @@
 
         var showResult = function (x) {
           if (isTuple(x))
-            return "(" + showResult (fst x) + ", " + showResult (snd x) + ")";
+            return "(" + showResult (fst(x)) + ", " + showResult (snd(x)) + ")";
           else if (isList(x))
             return "[" + (listToArray (fmap(showResult)(x))) + "]";
           else
