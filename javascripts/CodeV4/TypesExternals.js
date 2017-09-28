@@ -1,3 +1,4 @@
+"use strict";
 var TyCon = (function () {
     function TyCon(value0, value1) {
         this.value0 = value0;

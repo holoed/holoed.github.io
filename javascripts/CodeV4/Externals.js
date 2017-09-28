@@ -1,3 +1,5 @@
+"use strict";
+
 var Cons = function(head, tail) {
   this.head = head;
   this.tail = tail;
