@@ -21,7 +21,7 @@ var Nil = {
 };
 
 var isList = function(xs) {
-  return xs.isList == true;
+  return xs.isList;
 }
 
 var nil = Nil;
@@ -54,9 +54,11 @@ var empty = Nil;
 
 var mkTuple2 = function (x) {
   return function(y) {
-    return { fst: x, snd: y };
+    return { fst: x, snd: y, isTuple: true };
   };
 };
+
+var isTuple = function(p) { return p.isTuple; }
 
 var fst = function (p) { return p.fst; };
 
@@ -310,6 +312,7 @@ exports.nil = nil;
 exports.mkTuple2 = mkTuple2;
 exports.fst = fst;
 exports.snd = snd;
+exports.isTuple = isTuple;
 exports.stringToCharList = stringToCharList;
 exports.charListToString = charListToString;
 exports.stringToInt = stringToInt;
