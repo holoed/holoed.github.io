@@ -343,3 +343,4 @@ exports.union = union;
 exports.emptySet = emptySet;
 exports.setContains = setContains;
 exports.not = not;
+exports.listToArray = listToArray;
