@@ -101,6 +101,7 @@
                 commandToExec = currentBuffer.join(" in ") + " in " + currentCommand
               }
 
+              console.log(commandToExec);
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (commandToExec))))))));
               var js = codegen.toJs(progAst)
               var ret = eval("(function(){ " + js + " })()");
