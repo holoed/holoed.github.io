@@ -294,7 +294,7 @@ var listToArray = function(xs){
     out.push(head(ys))
     ys = tail(ys)
   }
-  return "[" + out + "]";
+  return out;
 }
 
 exports.isList = isList;
