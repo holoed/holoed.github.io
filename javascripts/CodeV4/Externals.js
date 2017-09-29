@@ -311,6 +311,20 @@ var cos = function(x){
   return Math.cos(x);
 }
 
+var draw = function (size) {
+  return function (data) {
+    var ctx = canvas.getContext('2d');
+    for (var i = 0; i < size; i++){
+      for (var j = 0; j < size; j++){
+        var point = data[i][j];
+        ctx.fillStyle = 'rgb(' + point[0] + ',' + point[1] + ',' + point[2] + ')';
+        ctx.fillRect(j, i, 1, 1);
+      }
+    }
+  }
+}
+
+exports.draw = draw;
 exports.cos = cos;
 exports.truncate = truncate;
 exports.isList = isList;
