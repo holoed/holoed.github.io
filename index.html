@@ -20,8 +20,11 @@
       "use strict";
 
       var main = document.getElementById('canvas');
-      main.style.left = "100px";
-      main.style.top = "100px";
+      main.style.left = "0";
+      main.style.top = "0";
+      main.style.width = "100%";
+      main.style.height = "100%";
+      main.style.zIndex = "-1";
       main.style.position = "absolute";
       var ctx = main.getContext('2d');
       for (var i = 0; i < 255; i++){
