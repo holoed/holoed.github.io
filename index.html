@@ -26,13 +26,7 @@
       canvas.style.height = "100%";
       canvas.style.zIndex = "1";
       canvas.style.position = "absolute";
-      var ctx = canvas.getContext('2d');
-      for (var i = 0; i < 255; i++){
-        for (var j = 0; j < 255; j++){
-          ctx.fillStyle = 'rgb(' + i + ',' + j + ',255)';
-          ctx.fillRect(j, i, 1, 1);
-        }
-      }
+
 
        SystemJS.import('./javascripts/CodeV4/Externals.js').then(function (ext) {
        SystemJS.import('./javascripts/CodeV4/Base.js').then(function (base) {
