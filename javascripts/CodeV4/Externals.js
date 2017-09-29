@@ -322,6 +322,7 @@ var draw = function (size) {
         ctx.fillRect(j, i, 1, 1);
       }
     }
+    return true;
   }
 }
 
