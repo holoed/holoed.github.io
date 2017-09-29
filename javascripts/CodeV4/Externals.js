@@ -312,14 +312,25 @@ var cos = function(x){
   return Math.cos(x);
 }
 
+function drawPixel (canvasData, x, y, r, g, b, a) {
+    var index = (x + y * canvasWidth) * 4;
+    canvasData.data[index + 0] = r;
+    canvasData.data[index + 1] = g;
+    canvasData.data[index + 2] = b;
+    canvasData.data[index + 3] = a;
+}
+
 var draw = function (size) {
   return function (data) {
-    var ctx = canvas.getContext('2d');
+    var canvasWidth = canvas.width;
+    var canvasHeight = canvas.height;
+    var ctx = canvas.getContext("2d");
+    var canvasData = ctx.getImageData(0, 0, canvasWidth, canvasHeight);
+
     for (var i = 0; i < size; i++){
       for (var j = 0; j < size; j++){
         var point = data[i][j];
-        ctx.fillStyle = 'rgb(' + point[0] + ',' + point[1] + ',' + point[2] + ')';
-        ctx.fillRect(j, i, 1, 1);
+        drawPixel(canvasData, i, j, point[0], point[1], point[2], 255)
       }
     }
     return true;
