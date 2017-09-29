@@ -295,7 +295,8 @@ var listToArray = function(xs){
   var ys = xs
   var out = []
   while (!isEmpty(ys)) {
-    out.push(head(ys))
+    var h = head(ys)
+    out.push(h.isList ? listToArray(h): h)
     ys = tail(ys)
   }
   return out;
