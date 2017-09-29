@@ -15,8 +15,18 @@
   \____/\__,_/_/ /_/_/\____/_/
       </pre>
       <div id="terminal"></div>
+      <canvas id="canvas" width="256" height="256"></canvas>
       <script>
       "use strict";
+
+      var ctx = document.getElementById('canvas').getContext('2d');
+      for (var i = 0; i < 255; i++){
+        for (var j = 0; j < 255; j++){
+          ctx.fillStyle = 'rgb(' + i + ',' + j + ',255)';
+          ctx.fillRect(j, i, 1, 1);
+        }
+      }
+
        SystemJS.import('./javascripts/CodeV4/Externals.js').then(function (ext) {
        SystemJS.import('./javascripts/CodeV4/Base.js').then(function (base) {
        SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
@@ -32,7 +42,7 @@
        var term = new Terminal({
           cursorBlink: true,  // Do not blink the terminal's cursor
           cols: 480,  // Set the terminal's width to 120 columns
-          rows: 80  // Set the terminal's height to 80 rows
+          rows: 40  // Set the terminal's height to 80 rows
           });
         term.open(document.getElementById('terminal'));
 
