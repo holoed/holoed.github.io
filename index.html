@@ -116,9 +116,12 @@
               console.log(commandToExec);
               var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (commandToExec))))))));
               var js = codegen.toJs(progAst)
+              var t0 = performance.now();
               var ret = eval("(function(){ " + js + " })()");
+              var t1 = performance.now();
               if (typeof ret != "function") {
-                term.writeln("\r\n" + showResult(ret))
+                if (ret == "show:duration") term.writeln("Time taken: " + (t1 - t0))
+                else term.writeln("\r\n" + showResult(ret))
                 term.prompt();
               } else {
                 term.writeln('');
