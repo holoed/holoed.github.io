@@ -314,6 +314,8 @@ var cos = function(x){
 
 var draw = function (size) {
   return function (data) {
+    canvas.width = size;
+    canvas.height = size;
     var ctx = canvas.getContext('2d');
     for (var i = 0; i < size; i++){
       for (var j = 0; j < size; j++){
