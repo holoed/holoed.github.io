@@ -328,6 +328,12 @@ var draw = function (size) {
   }
 }
 
+var clear = function (size) {
+  var ctx = canvas.getContext('2d');
+  context.clearRect(0, 0, size, size);
+}
+
+exports.clear = clear;
 exports.draw = draw;
 exports.cos = cos;
 exports.truncate = truncate;
