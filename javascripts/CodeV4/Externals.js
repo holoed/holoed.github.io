@@ -330,7 +330,7 @@ var draw = function (size) {
 
 var clear = function (size) {
   var ctx = canvas.getContext('2d');
-  context.clearRect(0, 0, size, size);
+  ctx.clearRect(0, 0, size, size);
   return "show:duration";
 }
 
