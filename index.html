@@ -120,7 +120,7 @@
               var ret = eval("(function(){ " + js + " })()");
               var t1 = performance.now();
               if (typeof ret != "function") {
-                if (ret == "show:duration") term.writeln("Time taken: " + (t1 - t0))
+                if (ret == "show:duration") term.writeln("\r\nTime taken: " + (t1 - t0))
                 else term.writeln("\r\n" + showResult(ret))
                 term.prompt();
               } else {
