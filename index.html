@@ -104,7 +104,7 @@
         term.prompt();
 
         term.on('paste', function(ev) {
-          var topLevelLets = ev.match(/[^\r\n]let .*/g);
+          var topLevelLets = ev.match(/^let .*/g);
           if (topLevelLets == null || topLevelLets.length == 0) {
             var lines = ev.match(/[^\r\n]+/g);
             for (var j = 0; j < lines.length; j++) {
