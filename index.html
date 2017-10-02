@@ -99,14 +99,53 @@
            .replace(/\x3E/g,">");
         }
 
+        var evaluate = function(currentCommand) {
+          var inRegEx = /in (\w+)/g
+          var letRegEx = /let (\w+)/g
+          var inMatches = inRegEx.exec(currentCommand)
+          var letMatches = letRegEx.exec(currentCommand)
+
+          var commandToExec = null
+          if (inMatches == null && letMatches != null) {
+            currentBuffer.push(currentCommand)
+            commandToExec = currentBuffer.join(" in ") + " in " + letMatches[1]
+          }
+          else {
+            commandToExec = currentBuffer.join(" in ") + " in " + currentCommand
+          }
+
+          console.log(commandToExec);
+          var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (commandToExec))))))));
+          var js = codegen.toJs(progAst)
+          var t0 = performance.now();
+          var ret = eval("(function(){ " + js + " })()");
+          var t1 = performance.now();
+          if (typeof ret != "function") {
+            if (ret == "show:duration") term.writeln("\r\nTime taken: " + millisecToTimeString(t1 - t0))
+            else term.writeln("\r\n" + showResult(ret))
+            term.prompt();
+          } else {
+            term.writeln('');
+            term.prompt();
+          }
+        }
+
         var currentBuffer = ["let answer = 42"]
 
         term.prompt();
 
-        term.on('paste', function(ev) {
-          var lines = ev.match(/[^\r\n]+/g);
-          for (var i = 0; i < lines.length; i++) {
-            term.write(lines[i]);
+        term.on('paste', function(text) {
+          var paragraphs = text
+            .replace(/\n\r/g, "\n")
+            .replace(/\r/g, "\n")
+            .split(/\n{2,}/g);
+          for (var i = 0; i < paragraphs.length; i++) {
+              let x = paragraphs[i]
+              var lines = x.match(/[^\n]+/g);
+              for (var j = 0; j < lines.length; j++) {
+                term.write(lines[j]);
+              }
+              if (i < paragraphs.length - 1) evaluate(x);
           }
         });
 
@@ -117,35 +156,7 @@
             if (ev.keyCode == 13) {
               term.write('')
               var currentCommand = getCurrentCommand(term.buffer.y);
-
-              var inRegEx = /in (\w+)/g
-              var letRegEx = /let (\w+)/g
-              var inMatches = inRegEx.exec(currentCommand)
-              var letMatches = letRegEx.exec(currentCommand)
-
-              var commandToExec = null
-              if (inMatches == null && letMatches != null) {
-                currentBuffer.push(currentCommand)
-                commandToExec = currentBuffer.join(" in ") + " in " + letMatches[1]
-              }
-              else {
-                commandToExec = currentBuffer.join(" in ") + " in " + currentCommand
-              }
-
-              console.log(commandToExec);
-              var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (commandToExec))))))));
-              var js = codegen.toJs(progAst)
-              var t0 = performance.now();
-              var ret = eval("(function(){ " + js + " })()");
-              var t1 = performance.now();
-              if (typeof ret != "function") {
-                if (ret == "show:duration") term.writeln("\r\nTime taken: " + millisecToTimeString(t1 - t0))
-                else term.writeln("\r\n" + showResult(ret))
-                term.prompt();
-              } else {
-                term.writeln('');
-                term.prompt();
-              }
+              evaluate(currentCommand);
             } else if (ev.keyCode == 8) {
              // Do not delete the prompt
               if (term.buffer.x > shellprompt.length) {
