@@ -104,9 +104,13 @@
         term.prompt();
 
         term.on('paste', function(ev) {
-          var lines = ev.match(/[^\r\n]+/g);
-          for (var i = 0; i < lines.length; i++) {
-            term.write(lines[i]);
+          var topLevelLets = ev.match(/[^\r\n]let+/g);
+          for (var i = 0; i < topLevelLets.length; i++) {
+            var lines = topLevelLets[i].match(/[^\r\n]+/g);
+            for (var j = 0; j < lines.length; j++) {
+              term.write(lines[j]);
+            }
+            if (i < topLevelLets.length) term.writeln('');
           }
         });
 
