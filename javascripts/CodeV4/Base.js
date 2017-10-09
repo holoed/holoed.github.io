@@ -66,7 +66,7 @@ var range = function(startIndex) {
     return function(endIndex) {
         var i = endIndex;
         var acc = empty;
-        while (i > startIndex) {
+        while (i >= startIndex) {
           acc = cons(i)(acc);
           i = i - 1;
         }
