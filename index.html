@@ -27,153 +27,169 @@
       canvas.style.zIndex = "1";
       canvas.style.position = "absolute";
 
+      SystemJS.import('./javascripts/CodeV4/Externals.js').then(function (ext) {
+      SystemJS.import('./javascripts/CodeV4/Base.js').then(function (base) {
+      SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
+      SystemJS.import('./javascripts/CodeV4/CodeGenerator.js').then(function (codegen) {
+      SystemJS.import('./javascripts/CodeV4/TypesExternals.js').then(function (typesExt) {
+      SystemJS.import('./javascripts/CodeV4/TypeInference.js').then(function (typeInf) {
 
-       SystemJS.import('./javascripts/CodeV4/Externals.js').then(function (ext) {
-       SystemJS.import('./javascripts/CodeV4/Base.js').then(function (base) {
-       SystemJS.import('./javascripts/CodeV4/Parser.js').then(function (parser) {
-       SystemJS.import('./javascripts/CodeV4/CodeGenerator.js').then(function (codegen) {
+           var { cons, isEmpty, head, tail, nil, fst, snd, mkTuple2, listToArray, empty, isList, isTuple, truncate, cos, draw, clear, containsKey, findValue, error, singletonSet, union, emptySet, not, setContains } = ext;
+           var { compose, foldLeft, foldRight, range, concat, append, fmap, take, drop, reverse } = base;
+           var { mkTyCon, mkTyVar, mkTyLam, isTyVar, isTyCon, isTyLam, TyVar, TyLam, isInt, isFloat, isString, isChar } = typesExt;
+           var { pretty, cataExp } = codegen;
+           var { tp, prettyType, literalToType, typeOf } = typeInf;
 
-       var { cons, isEmpty, head, tail, nil, fst, snd, mkTuple2, listToArray, empty, isList, isTuple, truncate, cos, draw, clear } = ext;
-       var { compose, foldLeft, foldRight, range, concat, append, fmap, take, drop, reverse } = base;
-
-       String.prototype.replaceAt=function(index, replacement) {
-           return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
-        }
-
-       var term = new Terminal({
-          cursorBlink: true,  // Do not blink the terminal's cursor
-          cols: 480,  // Set the terminal's width to 120 columns
-          rows: 40  // Set the terminal's height to 80 rows
-          });
-        term.open(document.getElementById('terminal'));
-
-        var shellprompt = 'junior> ';
-
-        term.prompt = function () {
-          term.write(shellprompt);
-        };
-
-        var showResult = function (x) {
-          if (typeof(x) == "string")
-            return '"' + x + '"';
-          else if (isTuple(x))
-            return "(" + showResult (fst(x)) + ", " + showResult (snd(x)) + ")";
-          else if (isList(x))
-            return "[" + (listToArray (fmap(showResult)(x))) + "]";
-          else
-            return x.toString();
-        }
-
-        var millisecToTimeString = function (millisec) {
-            var seconds = (millisec / 1000).toFixed(0);
-            var minutes = Math.floor(seconds / 60);
-            var hours = "";
-            if (minutes > 59) {
-                hours = Math.floor(minutes / 60);
-                hours = (hours >= 10) ? hours : "0" + hours;
-                minutes = minutes - (hours * 60);
-                minutes = (minutes >= 10) ? minutes : "0" + minutes;
+           String.prototype.replaceAt=function(index, replacement) {
+               return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
             }
 
-            seconds = Math.floor(seconds % 60);
-            seconds = (seconds >= 10) ? seconds : "0" + seconds;
-            if (hours != "") {
-                return hours + ":" + minutes + ":" + seconds;
+           var term = new Terminal({
+              cursorBlink: true,  // Do not blink the terminal's cursor
+              cols: 480,  // Set the terminal's width to 120 columns
+              rows: 40  // Set the terminal's height to 80 rows
+              });
+            term.open(document.getElementById('terminal'));
+
+            var shellprompt = 'junior> ';
+
+            term.prompt = function () {
+              term.write(shellprompt);
+            };
+
+            var showResult = function (x) {
+              if (typeof(x) == "string")
+                return '"' + x + '"';
+              else if (isTuple(x))
+                return "(" + showResult (fst(x)) + ", " + showResult (snd(x)) + ")";
+              else if (isList(x))
+                return "[" + (listToArray (fmap(showResult)(x))) + "]";
+              else if (isTyVar(x) || isTyCon(x) || isTyLam(x))
+                return prettyType(x);
+              else
+                return x.toString();
             }
-            return minutes + ":" + seconds;
-        }
 
-        var getCurrentCommand = function(y) {
-          return term.children[y].innerText
-           .slice(8)
-           .trim()
-           .replace(/\xA0/g," ")
-           .replace(/\x28/g,"(")
-           .replace(/\x29/g,")")
-           .replace(/\x2A/g,"*")
-           .replace(/\x2B/g,"+")
-           .replace(/\x26/g,"&")
-           .replace(/\x2F/g,"/")
-           .replace(/\x3C/g,"<")
-           .replace(/\x3D/g,"=")
-           .replace(/\x3E/g,">");
-        }
+            var millisecToTimeString = function (millisec) {
+                var seconds = (millisec / 1000).toFixed(0);
+                var minutes = Math.floor(seconds / 60);
+                var hours = "";
+                if (minutes > 59) {
+                    hours = Math.floor(minutes / 60);
+                    hours = (hours >= 10) ? hours : "0" + hours;
+                    minutes = minutes - (hours * 60);
+                    minutes = (minutes >= 10) ? minutes : "0" + minutes;
+                }
 
-        var evaluate = function(currentCommand) {
-          var inRegEx = /in (\w+)/g
-          var letRegEx = /let (\w+)/g
-          var inMatches = inRegEx.exec(currentCommand)
-          var letMatches = letRegEx.exec(currentCommand)
+                seconds = Math.floor(seconds % 60);
+                seconds = (seconds >= 10) ? seconds : "0" + seconds;
+                if (hours != "") {
+                    return hours + ":" + minutes + ":" + seconds;
+                }
+                return minutes + ":" + seconds;
+            }
 
-          var commandToExec = null
-          if (inMatches == null && letMatches != null) {
-            currentBuffer.push(currentCommand)
-            commandToExec = currentBuffer.join(" in ") + " in " + letMatches[1]
-          }
-          else {
-            commandToExec = currentBuffer.join(" in ") + " in " + currentCommand
-          }
+            var getCurrentCommand = function(y) {
+              return term.children[y].innerText
+               .slice(8)
+               .trim()
+               .replace(/\xA0/g," ")
+               .replace(/\x28/g,"(")
+               .replace(/\x29/g,")")
+               .replace(/\x2A/g,"*")
+               .replace(/\x2B/g,"+")
+               .replace(/\x26/g,"&")
+               .replace(/\x2F/g,"/")
+               .replace(/\x3C/g,"<")
+               .replace(/\x3D/g,"=")
+               .replace(/\x3E/g,">");
+            }
 
-          console.log(commandToExec);
-          var progAst = (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (commandToExec))))))));
-          var js = codegen.toJs(progAst)
-          var t0 = performance.now();
-          var ret = eval("(function(){ " + js + " })()");
-          var t1 = performance.now();
-          if (typeof ret != "function") {
-            if (ret == "show:duration") term.writeln("\r\nTime taken: " + millisecToTimeString(t1 - t0))
-            else term.writeln("\r\n" + showResult(ret))
-            term.prompt();
-          } else {
-            term.writeln('');
-            term.prompt();
-          }
-        }
+            var parseProg = function (txt) {
+              return (ext.fst ((ext.head (((parser.parse (parser.progP)) ((ext.stringToCharList (txt))))))));
+            }
 
-        var currentBuffer = ["let answer = 42"]
+            var parse = function (txt) {
+              return parseProg(txt).expr;
+            }
 
-        term.prompt();
+            var evaluate = function(currentCommand) {
+              var inRegEx = /in (\w+)/g
+              var letRegEx = /let (\w+)/g
+              var inMatches = inRegEx.exec(currentCommand)
+              var letMatches = letRegEx.exec(currentCommand)
 
-        term.on('paste', function(text) {
-          var paragraphs = text
-            .replace(/\n\r/g, "\n")
-            .replace(/\r/g, "\n")
-            .split(/\n{2,}/g);
-          for (var i = 0; i < paragraphs.length; i++) {
-              let x = paragraphs[i]
-              var lines = x.match(/[^\n]+/g);
-              for (var j = 0; j < lines.length; j++) {
-                term.write(lines[j]);
+              var commandToExec = null
+              if (inMatches == null && letMatches != null) {
+                currentBuffer.push(currentCommand)
+                commandToExec = currentBuffer.join(" in ") + " in " + letMatches[1]
               }
-              if (i < paragraphs.length - 1) evaluate(x);
-          }
-        });
-
-        term.on('key', function (key, ev) {
-            var printable = (
-              !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
-            );
-            if (ev.keyCode == 13) {
-              term.write('')
-              var currentCommand = getCurrentCommand(term.buffer.y);
-              evaluate(currentCommand);
-            } else if (ev.keyCode == 8) {
-             // Do not delete the prompt
-              if (term.buffer.x > shellprompt.length) {
-                term.write('\b \b');
-                currentCommand = getCurrentCommand(term.buffer.y);
+              else {
+                commandToExec = currentBuffer.join(" in ") + " in " + currentCommand
               }
-            } else if (ev.code == "ArrowUp") {
-              currentCommand = getCurrentCommand(term.buffer.y - 2);
-              term.eraseLine(term.buffer.y);
-              term.buffer.x = 0;
-              term.prompt();
-              term.write(currentCommand);
-            } else if (ev.code == "ArrowDown") {
-              console.log("not supported")
-            }else if (printable) {
-              term.write(key);
+
+              console.log(commandToExec);
+              var progAst = parseProg(commandToExec);
+              var js = codegen.toJs(progAst)
+              var t0 = performance.now();
+              var ret = eval("(function(){ " + js + " })()");
+              var t1 = performance.now();
+              if (typeof ret != "function") {
+                if (ret == "show:duration") term.writeln("\r\nTime taken: " + millisecToTimeString(t1 - t0))
+                else term.writeln("\r\n" + showResult(ret))
+                term.prompt();
+              } else {
+                term.writeln('');
+                term.prompt();
+              }
             }
+
+            var currentBuffer = ["let answer = 42"]
+
+            term.prompt();
+
+            term.on('paste', function(text) {
+              var paragraphs = text
+                .replace(/\n\r/g, "\n")
+                .replace(/\r/g, "\n")
+                .split(/\n{2,}/g);
+              for (var i = 0; i < paragraphs.length; i++) {
+                  let x = paragraphs[i]
+                  var lines = x.match(/[^\n]+/g);
+                  for (var j = 0; j < lines.length; j++) {
+                    term.write(lines[j]);
+                  }
+                  if (i < paragraphs.length - 1) evaluate(x);
+              }
+            });
+
+            term.on('key', function (key, ev) {
+                var printable = (
+                  !ev.altKey && !ev.altGraphKey && !ev.ctrlKey && !ev.metaKey
+                );
+                if (ev.keyCode == 13) {
+                  term.write('')
+                  var currentCommand = getCurrentCommand(term.buffer.y);
+                  evaluate(currentCommand);
+                } else if (ev.keyCode == 8) {
+                 // Do not delete the prompt
+                  if (term.buffer.x > shellprompt.length) {
+                    term.write('\b \b');
+                    currentCommand = getCurrentCommand(term.buffer.y);
+                  }
+                } else if (ev.code == "ArrowUp") {
+                  currentCommand = getCurrentCommand(term.buffer.y - 2);
+                  term.eraseLine(term.buffer.y);
+                  term.buffer.x = 0;
+                  term.prompt();
+                  term.write(currentCommand);
+                } else if (ev.code == "ArrowDown") {
+                  console.log("not supported")
+                }else if (printable) {
+                  term.write(key);
+                }
+              });
+            });
           });
         });
       });
