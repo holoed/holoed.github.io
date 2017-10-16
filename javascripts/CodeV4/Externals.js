@@ -319,13 +319,18 @@ var draw = function (size) {
     canvas.width = size;
     canvas.height = size;
     var ctx = canvas.getContext('2d');
+    var canvasData = ctx.getImageData(0, 0, size, size);
     for (var i = 0; i < size; i++){
       for (var j = 0; j < size; j++){
         var point = data[i][j];
-        ctx.fillStyle = 'rgb(' + point[0] + ',' + point[1] + ',' + point[2] + ')';
-        ctx.fillRect(j, i, 1, 1);
+        var index = (j + i * size) * 4;
+        canvasData.data[index + 0] = point[0];
+        canvasData.data[index + 1] = point[1];
+        canvasData.data[index + 2] = point[2];
+        canvasData.data[index + 3] = 255;
       }
     }
+    ctx.putImageData(canvasData, 0, 0);
     return "show:duration";
   }
 }
