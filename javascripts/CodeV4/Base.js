@@ -108,13 +108,14 @@ var take = function(n) {
     }
 };
 var fmap = function(f) {
-    return function(xs) {
-        return (((foldRight(function(x) {
-            return function(acc) {
-                return ((cons((f(x))))(acc))
-            }
-        }))(empty))(xs))
-    }
+    var fmap2 = function(xs) {
+         if (isEmpty(xs)) {
+           return empty;
+         } else {
+           return cons(f(head(xs)))(fmap2(tail(xs)));
+         }
+      };
+      return fmap2;
 };
 var flatMap = function(f) {
     return ((compose(concat))((fmap(f))))
