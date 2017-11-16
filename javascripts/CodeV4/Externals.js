@@ -183,7 +183,7 @@ var isIfThenElse = function (e) {
 
 var error = function (s) {
   console.log(s)
-  return null
+  throw s;
 }
 
 var extractLet = function (e) {
