@@ -79,6 +79,10 @@ var isInt = function(n) {
   return n === +n && n === (n|0);
 }
 
+var isBoolean = function(x) {
+  return (typeof x === 'boolean');
+}
+
 var isString = function(x) {
   return (typeof x === 'string' || x instanceof String);
 }
@@ -126,3 +130,4 @@ exports.isFloat = isFloat;
 exports.isInt = isInt;
 exports.isString = isString;
 exports.isChar = isChar;
+exports.isBoolean = isBoolean;
