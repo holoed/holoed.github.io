@@ -2,8 +2,8 @@
   <html>
     <head>
       <meta http-equiv="Cache-control" content="no-cache">
-      <link rel="stylesheet" href="javascripts/xterm/dist/xterm.css" />
-      <script src="javascripts/xterm/dist/xterm.js"></script>
+      <link rel="stylesheet" href="node_modules/xterm/dist/xterm.css" />
+      <script src="node_modules/xterm/dist/xterm.js"></script>
       <script src="javascripts/systemjs/dist/system.js"></script>
     </head>
     <body style="background-color:black; color:yellow;">
@@ -90,7 +90,8 @@
             }
 
             var getCurrentCommand = function(y) {
-              return term.children[y].innerText
+              term.selectionManager.setSelection(0, y, 480)
+              var txt = term.getSelection()
                .slice(8)
                .trim()
                .replace(/\xA0/g," ")
@@ -103,6 +104,8 @@
                .replace(/\x3C/g,"<")
                .replace(/\x3D/g,"=")
                .replace(/\x3E/g,">");
+               console.log(txt)
+               return txt;
             }
 
             var parseProg = function (txt) {
