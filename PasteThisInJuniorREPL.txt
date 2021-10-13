@@ -1,0 +1,51 @@
+let splitAt = \n -> \xs ->
+  if (isEmpty xs) then empty
+  else cons (take n xs) (splitAt n (drop n xs))
+
+let posToCoor = \sz -> \x ->
+  let row = truncate (x / sz) in
+  let col = (x - (sz * row)) in
+  mkTuple2 row col
+
+let uncurry = \f -> \p -> f (fst p) (snd p)
+
+let render = \effect -> \pixSize ->
+  let xs = range 0 (pixSize * pixSize) in
+  let ys = splitAt pixSize xs in
+  let zs = fmap (fmap (posToCoor pixSize)) ys in
+  let vs = fmap (fmap (uncurry (effect pixSize))) zs in
+  vs
+
+let norm = \p ->
+  let re = fst p in
+  let im = snd p in
+  (re * re) + (im * im)
+
+let cadd = \p -> \q ->
+  let re1 = fst p in
+  let im1 = snd p in
+  let re2 = fst q in
+  let im2 = snd q in
+  mkTuple2 (re1 + re2) (im1 + im2)
+
+let cmul = \p -> \q ->
+  let re1 = fst p in
+  let im1 = snd p in
+  let re2 = fst q in
+  let im2 = snd q in
+  mkTuple2 ((re1 * re2) - (im1 * im2)) ((re1 * im2) + (im1 * re2))
+
+let mPoint = \i -> \c -> \z ->
+  if ((i == 63) || ((norm z) > 4)) then i
+  else mPoint (i + 1) c (cadd (cmul z z) c)
+
+let mandelbrot = \s -> \x -> \y ->
+  let x2 = (4.0 * y / s) - 2.5 in
+  let y2 = (4.0 * x / s) - 2.0 in
+  let i2 = mPoint 0 (mkTuple2 x2 y2) (mkTuple2 0 0) in
+  let f = \i -> 128 + (truncate (128 * (cos (i * 0.3)))) in
+  cons (f i2) (cons (f (i2 + 16)) (cons (f (i2 + 32)) empty))
+
+let drawEffect = \effect -> \size -> draw size (listToArray (render effect size))
+
+drawEffect mandelbrot 512
