@@ -1,0 +1,112 @@
+{
+  "stocks": [
+    {
+      "symbol": "H",
+      "quantity": 16
+    },
+    {
+      "symbol": "RKLB",
+      "quantity": 344
+    },
+    {
+      "symbol": "AMAT",
+      "quantity": 18
+    },
+    {
+      "symbol": "MPWR",
+      "quantity": 3
+    },
+    {
+      "symbol": "AI",
+      "quantity": 22
+    },
+    {
+      "symbol": "ERG.MI",
+      "quantity": 11
+    },
+    {
+      "symbol": "AAPL",
+      "quantity": 4
+    },
+    {
+      "symbol": "TSLA",
+      "quantity": 3
+    },
+    {
+      "symbol": "AMD",
+      "quantity": 59
+    },
+    {
+      "symbol": "MAR",
+      "quantity": 4
+    },
+    {
+      "symbol": "G.MI",
+      "quantity": 100
+    },
+    {
+      "symbol": "ARN.MI",
+      "quantity": 49
+    },
+    {
+      "symbol": "NVDA",
+      "quantity": 22
+    },
+    {
+      "symbol": "GOOGL",
+      "quantity": 20
+    },
+    {
+      "symbol": "AVGO",
+      "quantity": 4
+    },
+    {
+      "symbol": "LMT",
+      "quantity": 1
+    },
+    {
+      "symbol": "QCOM",
+      "quantity": 5
+    },
+    {
+      "symbol": "O",
+      "quantity": 45
+    },
+    {
+      "symbol": "ISLN.L",
+      "quantity": 10
+    },
+    {
+      "symbol": "META",
+      "quantity": 4
+    },
+    {
+      "symbol": "U",
+      "quantity": 20
+    },
+    {
+      "symbol": "ETSY",
+      "quantity": 10
+    },
+    {
+      "symbol": "HAL",
+      "quantity": 51
+    },
+    {
+      "symbol": "APA",
+      "quantity": 30
+    },
+    {
+      "symbol": "GD",
+      "quantity": 1
+    },
+    {
+      "symbol": "MU",
+      "quantity": 4
+    },
+    {
+      "symbol": "JNJ",
+      "quantity": 7
+    }
+  ]
+}
