@@ -2,115 +2,143 @@
   "stocks": [
     {
       "symbol": "H",
-      "quantity": 16
+      "quantity": 16,
+      "currency": "USD"
     },
     {
       "symbol": "RKLB",
-      "quantity": 344
+      "quantity": 344,
+      "currency": "USD"
     },
     {
       "symbol": "AMAT",
-      "quantity": 18
+      "quantity": 18,
+      "currency": "USD"
     },
     {
       "symbol": "MPWR",
-      "quantity": 3
+      "quantity": 3,
+      "currency": "USD"
     },
     {
       "symbol": "AI",
-      "quantity": 22
+      "quantity": 22,
+      "currency": "USD"
     },
     {
       "symbol": "ERG.MI",
-      "quantity": 11
+      "quantity": 11,
+      "currency": "EUR"
     },
     {
       "symbol": "AAPL",
-      "quantity": 4
+      "quantity": 4,
+      "currency": "USD"
     },
     {
       "symbol": "TSLA",
-      "quantity": 3
+      "quantity": 3,
+      "currency": "USD"
     },
     {
       "symbol": "AMD",
-      "quantity": 59
+      "quantity": 59,
+      "currency": "USD"
     },
     {
       "symbol": "MAR",
-      "quantity": 4
+      "quantity": 4,
+      "currency": "USD"
     },
     {
       "symbol": "G.MI",
-      "quantity": 100
+      "quantity": 100,
+      "currency": "EUR"
     },
     {
       "symbol": "ARN.MI",
-      "quantity": 49
+      "quantity": 49,
+      "currency": "EUR"
     },
     {
       "symbol": "NVDA",
-      "quantity": 22
+      "quantity": 22,
+      "currency": "USD"
     },
     {
       "symbol": "GOOGL",
-      "quantity": 20
+      "quantity": 20,
+      "currency": "USD"
     },
     {
       "symbol": "AVGO",
-      "quantity": 4
+      "quantity": 4,
+      "currency": "USD"
     },
     {
       "symbol": "LMT",
-      "quantity": 1
+      "quantity": 1,
+      "currency": "USD"
     },
     {
       "symbol": "QCOM",
-      "quantity": 5
+      "quantity": 5,
+      "currency": "USD"
     },
     {
       "symbol": "O",
-      "quantity": 45
+      "quantity": 45,
+      "currency": "USD"
     },
     {
       "symbol": "ISLN.L",
-      "quantity": 10
+      "quantity": 10,
+      "currency": "EUR"
     },
     {
       "symbol": "META",
-      "quantity": 4
+      "quantity": 4,
+      "currency": "USD"
     },
     {
       "symbol": "U",
-      "quantity": 20
+      "quantity": 20,
+      "currency": "USD"
     },
     {
       "symbol": "ETSY",
-      "quantity": 10
+      "quantity": 10,
+      "currency": "USD"
     },
     {
       "symbol": "HAL",
-      "quantity": 51
+      "quantity": 51,
+      "currency": "USD"
     },
     {
       "symbol": "APA",
-      "quantity": 30
+      "quantity": 30,
+      "currency": "USD"
     },
     {
       "symbol": "GD",
-      "quantity": 1
+      "quantity": 1,
+      "currency": "USD"
     },
     {
       "symbol": "MU",
-      "quantity": 4
+      "quantity": 4,
+      "currency": "USD"
     },
     {
       "symbol": "JNJ",
-      "quantity": 7
+      "quantity": 7,
+      "currency": "USD"
     },
     {
       "symbol": "EXR",
-      "quantity": 2
+      "quantity": 2,
+      "currency": "USD"
     }
   ]
 }
