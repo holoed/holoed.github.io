@@ -107,6 +107,10 @@
     {
       "symbol": "JNJ",
       "quantity": 7
+    },
+    {
+      "symbol": "EXR",
+      "quantity": 2
     }
   ]
 }
