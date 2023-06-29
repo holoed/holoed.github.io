@@ -1,6 +1,11 @@
 {
   "stocks": [
     {
+      "symbol": "KMB",
+      "quantity": 2,
+      "currency": "USD"
+    },
+    {
       "symbol": "H",
       "quantity": 20,
       "currency": "USD"
