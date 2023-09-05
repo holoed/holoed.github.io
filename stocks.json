@@ -2,7 +2,7 @@
   "stocks": [
     {
       "symbol": "KMB",
-      "quantity": 6,
+      "quantity": 10,
       "currency": "USD"
     },
     {
